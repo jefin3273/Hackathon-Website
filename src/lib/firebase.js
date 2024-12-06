@@ -2,13 +2,13 @@ import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
 import { getAuth } from "firebase/auth";
 const firebaseConfig = {
-  apiKey: "AIzaSyBOrQXy8UA0Qm2bwpXngf54P85gVc-pChM",
-  authDomain: "hackatank-1834c.firebaseapp.com",
-  projectId: "hackatank-1834c",
-  storageBucket: "hackatank-1834c.appspot.com",
-  messagingSenderId: "986553465308",
-  appId: "1:986553465308:web:8b8a8b3ced07911e00f719",
-  measurementId: "G-2677BE5L48",
+  apiKey: "AIzaSyD8P5rvBgGEKk2Ax-3duyCfUOxncNqA2bY",
+  authDomain: "hackathon-ec23b.firebaseapp.com",
+  projectId: "hackathon-ec23b",
+  storageBucket: "hackathon-ec23b.firebasestorage.app",
+  messagingSenderId: "454197246685",
+  appId: "1:454197246685:web:6ccf64df61eea879e0f934",
+  measurementId: "G-Q6K09ZFH1L",
 };
 
 export const app = initializeApp(firebaseConfig);
