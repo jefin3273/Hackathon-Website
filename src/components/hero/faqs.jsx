@@ -54,27 +54,20 @@ const faqs = () => {
               />
             </h1>
             <p className="faqs-content-description">
-              A hackathon is a social coding event that brings computer
-              programmers and other interested people together to improve upon
-              or build a new software program or a hardware solution for the
-              provided problem statements.
+            A hackathon is an event where individuals or teams collaborate intensively to develop innovative solutions to specific challenges, using technology and creativity within a set timeframe.
             </p>
           </div>
 
           <div className="faqs-content" onClick={handleArrow}>
             <h1 className="faqs-content-title">
-              What is “Hack-A-Tank”?
+            What is this hackathon about?
               <ChevronRightIcon
                 style={styles.container}
                 className="faqs-arrow"
               />
             </h1>
             <p className="faqs-content-description">
-              Hack-A-Tank is the first 24-hour international-level hackathon
-              organized by the SRM Valliammai engineering college in
-              collaboration with Whitehatians – Club of the Department of Cyber
-              Security and the Student Branch of Computer Society of India (CSI-
-              SB).
+            This is an international 5-day virtual hackathon where participants solve real-world corporate-level problems. It’s a platform to showcase talent, learn, and compete for a prize pool of Rs. 1Lakh.
             </p>
           </div>
 
@@ -87,8 +80,7 @@ const faqs = () => {
               />
             </h1>
             <p className="faqs-content-description">
-              Hack-A-Tank is open to all undergraduate students from all
-              colleges across India.
+            The hackathon is open to participants globally. Team size must be between 2 to 5 members.
             </p>
           </div>
 
@@ -101,15 +93,7 @@ const faqs = () => {
               />
             </h1>
             <p className="faqs-content-description">
-              After the scrutiny process, the organizing committee will release
-              the shortlisted teams for the finale. The selected team must pay a
-              registration fee of Rs. 1000/- per team, which includes GST. It
-              contributes to goodie bags, food, and refreshments served during
-              the event. The registration fee is non-refundable and
-              non-transferable. Teams are advised to complete the registration
-              process as soon as possible to secure their participation in the
-              event. Upon successful completion of the registration, teams will
-              receive further instructions from the organizing committee.
+            The registration fee is just Rs. 200 per team.
             </p>
           </div>
 
@@ -122,11 +106,7 @@ const faqs = () => {
               />
             </h1>
             <p className="faqs-content-description">
-              The first round will be abstract submission which is completely
-              done in virtual mode. Further upon registration, you will be
-              contacted by our team and given a brief on the process of abstract
-              submission. The shortlisted team should appear physically for the
-              final.
+            The hackathon is completely online, allowing participants from all over the world to join.
             </p>
           </div>
           <div className="faqs-content" onClick={handleArrow}>
@@ -138,51 +118,43 @@ const faqs = () => {
               />
             </h1>
             <p className="faqs-content-description">
-              Click the register button on the home page and you will be
-              directed to the respective Google form. Kindly submit the required
-              details and our organizing team will contact you as soon as
-              possible.
+            Visit our website, fill out the registration form with accurate details, pay the fee, and join the Telegram group for updates.
             </p>
           </div>
           <div className="faqs-content" onClick={handleArrow}>
             <h1 className="faqs-content-title">
-              What is the prize money of the winning team?
+            What is the prize pool?
               <ChevronRightIcon
                 style={styles.container}
                 className="faqs-arrow"
               />
             </h1>
             <p className="faqs-content-description">
-              The event has a prize pool of Rs 25,000 for the winners.
+            The total prize pool exceeds Rs. 2,00,000, with the first prize being Rs. 75,000.
             </p>
           </div>
           <div className="faqs-content" onClick={handleArrow}>
             <h1 className="faqs-content-title">
-              What is the team size to participate in the Hack-A-Tank?
+            What is the team size?
               <ChevronRightIcon
                 style={styles.container}
                 className="faqs-arrow"
               />
             </h1>
             <p className="faqs-content-description">
-              The teams must have a minimum of 2 members and a maximum of 3
-              members.
+            Teams must have a minimum of 2 members and a maximum of 5 members.
             </p>
           </div>
           <div className="faqs-content" onClick={handleArrow}>
             <h1 className="faqs-content-title">
-              What are the prerequisites considered for registering?
+            What are the prerequisites for registering?
               <ChevronRightIcon
                 style={styles.container}
                 className="faqs-arrow"
               />
             </h1>
             <p className="faqs-content-description">
-              Participants may need to have knowledge and skills in areas such
-              as electronics, programming, data analytics, and IoT technologies,
-              depending on the theme of the hackathon. Participants must need to
-              bring their own laptops, sensors, microcontrollers, and other
-              necessary tools and equipment.
+            Participants should have a keen interest in technology and innovation. Knowledge of programming, design, or relevant technical skills is advantageous.
             </p>
           </div>
         </div>

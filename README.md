@@ -1,11 +1,13 @@
 # Hackathon Management Web Platform
-![](https://github.com/user-attachments/assets/9d36a3f4-a49c-4837-803f-60b0fbad7c65)
 
+![](https://github.com/user-attachments/assets/9d36a3f4-a49c-4837-803f-60b0fbad7c65)
 
 Welcome to the Hackathon Management Web Platform repository! This comprehensive, full-stack web platform is designed to facilitate seamless participation and management for hackathon events. Developed with cutting-edge technologies, it offers a dynamic and engaging experience for both participants and organizers.
 <br />
-> **Note:** This platform was initially developed for Hackatank, an international-level 24-hour hackathon celebrating SRMVEC's 25th-year anniversary. The use of any images, content, or logos in this repository is not permitted without proper authorization.
-<br /><br />
+
+> **Note:** This platform was initially developed for HackaTon, an international-level 24-hour hackathon celebrating SRMVEC's 25th-year anniversary. The use of any images, content, or logos in this repository is not permitted without proper authorization.
+> <br /><br />
+
 ## Table of Contents
 
 - [Features](#features)
@@ -28,8 +30,8 @@ Welcome to the Hackathon Management Web Platform repository! This comprehensive,
 4. **QR Code Registration:** Unique IDs assigned to each participant are embedded within QR codes for smooth on-site verification.
 5. **Secure Access:** Firebase Google login for authorized organizers, providing secure access to the admin dashboard.
 6. **Administrative Efficiency:**
-    - Real-time tracking of participant movement (IN/OUT) and lunch status.
-    - Data seamlessly integrated into Google Sheets using the Google Sheets API for easy management.
+   - Real-time tracking of participant movement (IN/OUT) and lunch status.
+   - Data seamlessly integrated into Google Sheets using the Google Sheets API for easy management.
 7. **SEO and Google Analytics:** Enhance visibility and track website performance.
 
 ## Getting Started
@@ -46,22 +48,22 @@ To get started, ensure you have the following installed:
 
 1. **Clone the Repository:**
 
-    ```sh
-    git clone https://github.com/yourusername/hackatank.git
-    ```
+   ```sh
+   git clone https://github.com/yourusername/hackaTon.git
+   ```
 
 2. **Install Dependencies:**
 
-    ```sh
-    cd hackatank
-    npm install or yarn install
-    ```
+   ```sh
+   cd hackaTon
+   npm install or yarn install
+   ```
 
 3. **Run the Application:**
 
-    ```sh
-    npm start or yarn start
-    ```
+   ```sh
+   npm start or yarn start
+   ```
 
 ## Usage
 
@@ -70,7 +72,7 @@ To get started, ensure you have the following installed:
 
 ## License and Usage
 
-This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License. 
+This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.
 
 ![Creative Commons License](https://i.creativecommons.org/l/by-nc/4.0/88x31.png)
 
@@ -81,7 +83,8 @@ To view a copy of this license, visit [http://creativecommons.org/licenses/by-nc
 If you encounter any issues or have suggestions for improvements, please submit an issue in the [Issues section](https://github.com/yourusername/hackathon-management-platform/issues).
 
 ## Legal Usage
-To Legally use this site for your event, [click here](https://www.upwork.com/services/product/development-it-react-website-for-your-hackathon-event-1817556808465455243?ref=project_share) or contact query@shadowctrl.me 
+
+To Legally use this site for your event, [click here](https://www.upwork.com/services/product/development-it-react-website-for-your-hackathon-event-1817556808465455243?ref=project_share) or contact query@shadowctrl.me
 
 ## Contact Information
 
@@ -93,8 +96,7 @@ If you are interested in working with me on your project, feel free to visit my 
 
 ## 💰 You Can Help Me by Donating
 
-[![BuyMeACoffee](https://img.shields.io/badge/Buy%20Me%20a%20Coffee-ffdd00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black)](https://buymeacoffee.com/shadowctrl) 
+[![BuyMeACoffee](https://img.shields.io/badge/Buy%20Me%20a%20Coffee-ffdd00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black)](https://buymeacoffee.com/shadowctrl)
 [![PayPal](https://img.shields.io/badge/PayPal-00457C?style=for-the-badge&logo=paypal&logoColor=white)](https://paypal.me/shadowctrl)
-
 
 # ⭐️ Don't forget to give this repo a star if you find it useful!

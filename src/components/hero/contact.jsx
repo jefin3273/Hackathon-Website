@@ -94,7 +94,7 @@ const contact = () => {
                         onClick={() => {
                           handleLaunch("contact-card-launch2");
                           setTimeout(() => {
-                            window.open("mailto:shree@hackatank.tech");
+                            window.open("mailto:shree@hackaTon.tech");
                           }, 2000);
                         }}
                       >
@@ -105,7 +105,7 @@ const contact = () => {
                             height: "35px",
                           }}
                         />
-                        shree@hackatank.tech
+                        shree@hackaTon.tech
                         <span id="contact-card-launch2">
                           <RocketLaunchIcon
                             className="rocketLaunch"
@@ -254,7 +254,7 @@ const contact = () => {
                         onClick={() => {
                           handleLaunch("contact-card-launch12");
                           setTimeout(() => {
-                            window.open("mailto:kishore@hackatank.tech");
+                            window.open("mailto:kishore@hackaTon.tech");
                           }, 2000);
                         }}
                       >
@@ -265,7 +265,7 @@ const contact = () => {
                             height: "35px",
                           }}
                         />
-                        kishore@hackatank.tech
+                        kishore@hackaTon.tech
                         <span id="contact-card-launch12">
                           <RocketLaunchIcon
                             className="rocketLaunch"

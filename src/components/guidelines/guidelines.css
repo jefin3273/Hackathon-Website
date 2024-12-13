@@ -1,65 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Lato:wght@400;700&display=swap');
+
 .parent-guidelines {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 100vh;
-  @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
-    padding-bottom: 3vh;
-    height: 100%;
-  }
+  min-height: 100vh;
+  background: linear-gradient(135deg, #1a1a2e, #16213e, #0f3460);
+  background-size: 400% 400%;
+  animation: gradientBG 15s ease infinite;
+  overflow-x: hidden;
 }
+
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
 .guidelines-title {
-  padding-bottom: 2vw;
-  font-size: 3.5vw;
-  color: white;
-  font-family: audiowide;
+  padding: 2rem 0;
+  font-size: 3.5rem;
+  color: #e94560;
+  font-family: 'Audiowide', cursive;
   letter-spacing: 3px;
   font-weight: bold;
   text-transform: uppercase;
-  @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
-    font-size: 10vw;
-  }
+  text-shadow: 0 0 10px rgba(233, 69, 96, 0.5);
+  animation: glow 2s ease-in-out infinite alternate;
 }
+
+@keyframes glow {
+  from { text-shadow: 0 0 5px #e94560, 0 0 10px #e94560; }
+  to { text-shadow: 0 0 10px #e94560, 0 0 20px #e94560; }
+}
+
 .guidelines-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   color: white;
-  padding: 0vh 3vw;
+  padding: 0 3rem;
+  max-width: 1200px;
+  margin: 0 auto;
 }
+
 .guidelines-content {
   display: flex;
-  align-items: flex-start;
-  color: white;
-  gap: 4vw;
-  @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
-    flex-direction: column;
-    gap: 3vh;
-    justify-content: center;
-    align-items: center;
-  }
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
 }
-.guidelines-1,
-.guidelines-2 {
-  flex-basis: 50%;
-  padding: 2vh 1vw;
-  border: 1px solid slategrey;
-  border-radius: 1vw;
-  font-size: 1.2vw;
-  background-color: rgb(0, 0, 0, 0.3);
-  backdrop-filter: blur(1vw);
-  font-family: lato;
+
+.guidelines-section {
+  flex-basis: calc(50% - 1rem);
+  padding: 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  font-size: 1rem;
+  background-color: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  font-family: 'Lato', sans-serif;
   font-weight: 400;
-  box-shadow: 0vw 0vw 2vw 0vw white;
-  @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
-    font-size: 4vw;
-    padding: 2vh 2vw;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.guidelines-section:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 30px rgba(255, 255, 255, 0.2);
+}
+
+.guidelines-section h2 {
+  font-family: 'Audiowide', cursive;
+  color: #e94560;
+  margin-bottom: 1rem;
+}
+
+.guidelines-section ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.guidelines-section li {
+  margin-bottom: 1rem;
+  padding-left: 1.5rem;
+  position: relative;
+}
+
+.guidelines-section li::before {
+  content: '•';
+  color: #e94560;
+  font-size: 1.5rem;
+  position: absolute;
+  left: 0;
+  top: -0.2rem;
+}
+
+@media (max-width: 768px) {
+  .guidelines-title {
+    font-size: 2.5rem;
+  }
+
+  .guidelines-content {
+    flex-direction: column;
+  }
+
+  .guidelines-section {
+    flex-basis: 100%;
   }
 }
 
-@keyframes fadeGuidelines {
-  0% {
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeIn 0.5s ease forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
+

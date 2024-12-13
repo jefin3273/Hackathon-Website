@@ -1,72 +1,116 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useRef } from "react";
 import "./guidelines.css";
 
-const guildelines = () => {
+const Guidelines = () => {
+  const sectionRefs = useRef([]);
+
   useEffect(() => {
-    document.title = "Guidelines";
-  });
+    document.title = "Hack-A-Thon Guidelines";
+
+    const observerOptions = {
+      root: null,
+      rootMargin: "0px",
+      threshold: 0.1,
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("fade-in");
+          observer.unobserve(entry.target);
+        }
+      });
+    }, observerOptions);
+
+    sectionRefs.current.forEach((ref) => {
+      if (ref) observer.observe(ref);
+    });
+
+    return () => {
+      sectionRefs.current.forEach((ref) => {
+        if (ref) observer.unobserve(ref);
+      });
+    };
+  }, []);
+
+  const addToRefs = (el) => {
+    if (el && !sectionRefs.current.includes(el)) {
+      sectionRefs.current.push(el);
+    }
+  };
+
   return (
-    <React.Fragment>
-      <div className="parent-guidelines">
-        <div className="guidelines-title">Guidelines</div>
-        <div className="guidelines-container">
-          <div className="guidelines-content">
-            <div className="guidelines-1">
-              1. The teams can have a minimum of 2 members and a maximum of 3
-              members. 🤝👥
-              <br /> <br />
-              2. The last date for team registration is 25th August 2023. ⏰🗓️{" "}
-              <br />
-              <br />
-              3. The last date for abstract submission is 28th August 2023. 📝🗓️{" "}
-              <br />
-              <br />
-              4. The project should be unique and shouldn't have ever been
-              published in any other journals or competitions. 🚀🔍 <br />
-              <br />
-              5. The event will have three phases of judge review. Projects will
-              be evaluated every 8 hours from the beginning of the finale. 👁️‍🗨️🕒{" "}
-              <br />
-              <br />
-              6. The project's work should sustain the whole 24 hours; if it
-              fails to do so, the team will be disqualified immediately. 🏆🕒❌{" "}
-              <br />
-              <br />
-              7. Code of conduct is strictly monitored, and any case of
-              uncivilized behavior will result in the whole team's
-              disqualification. 🚫👮‍♂️❌ <br />
-              <br />
-            </div>
-            <div className="guidelines-2">
-              8. The abstract submission round is completely free for all teams
-              that have registered on or before the 25th of August 2023. 🆓📅{" "}
-              <br />
-              <br />
-              9. The shortlisted/scrutinized teams for the finale of
-              "HACK-A-TANK" will be announced by 4:00 pm on the 29th of August
-              2023. 📣🏁 10. The Finale round begins at 10:00 am on 8th
-              September 2023 and concludes at 5:00 pm on the 9th September 2023.
-              🏁🕙🏁
-              <br />
-              <br /> 11. The finale round will be offline and held at our SRM
-              VALLIAMMAI ENGINEERING COLLEGE, Potheri, Chennai. 🏛️📍 <br />
-              <br />
-              12. Power outlets and worksheets will be provided to all teams
-              prior to the commencement of the event. 🔌📑 <br />
-              <br />
-              13. All technical and physical requirements for the projects
-              should be brought by the team only, and no assistance will be
-              provided in this case. ⚙️🛠️🚫
-              <br /> <br />
-              14. Teams must present their projects in a clear and organized
-              manner during the finale, ensuring effective communication of
-              their ideas. 🗣️📊
-            </div>
-          </div>
+    <div className="parent-guidelines">
+      <h1 className="guidelines-title">Hack-A-Thon Guidelines</h1>
+      <div className="guidelines-container">
+        <div className="guidelines-content">
+          <section className="guidelines-section" ref={addToRefs}>
+            <h2>General Guidelines</h2>
+            <ul>
+              <li>Teams must have 2-5 members, registering under a single group name.</li>
+              <li>Open to tech enthusiasts, students, and professionals globally.</li>
+              <li>Registration fee: ₹200 per team (non-refundable).</li>
+              <li>Registration deadline: 19th December 2024, 11:59 PM IST.</li>
+              <li>Join the provided Telegram group for official updates.</li>
+            </ul>
+          </section>
+
+          <section className="guidelines-section" ref={addToRefs}>
+            <h2>Hackathon Rules</h2>
+            <ul>
+              <li>Problem statements revealed on 20th December 2024, 12:00 AM IST.</li>
+              <li>Development: 20th December 2024 (12:00 AM) to 25th December 2024 (8:00 PM) IST.</li>
+              <li>Submit via GitHub repository and a 5-minute presentation/video.</li>
+              <li>All work must be original and created during the hackathon.</li>
+              <li>Use any programming language, frameworks, or tools.</li>
+            </ul>
+          </section>
+
+          <section className="guidelines-section" ref={addToRefs}>
+            <h2>Judging Criteria</h2>
+            <ul>
+              <li>Innovation and Creativity: Originality and creative problem-solving.</li>
+              <li>Technical Implementation: Code quality and efficient use of technologies.</li>
+              <li>Scalability and Impact: Potential for real-world application.</li>
+              <li>Presentation: Clarity and effectiveness of project explanation.</li>
+            </ul>
+          </section>
+
+          <section className="guidelines-section" ref={addToRefs}>
+            <h2>Code of Conduct</h2>
+            <ul>
+              <li>Respect and collaborate with teammates and fellow participants.</li>
+              <li>Maintain high ethical standards; no cheating or misconduct.</li>
+              <li>Reach out to the organizing committee for any issues.</li>
+              <li>Violation of guidelines will result in disqualification.</li>
+            </ul>
+          </section>
+
+          <section className="guidelines-section" ref={addToRefs}>
+            <h2>Prizes and Recognition</h2>
+            <ul>
+              <li>Total Prize Pool: ₹2,00,000+</li>
+              <li>1st Prize: ₹75,000</li>
+              <li>2nd Prize: ₹50,000</li>
+              <li>3rd Prize: ₹25,000</li>
+              <li>Additional rewards include certificates and swag.</li>
+            </ul>
+          </section>
+
+          <section className="guidelines-section" ref={addToRefs}>
+            <h2>Important Dates</h2>
+            <ul>
+              <li>Registration Deadline: 19th December 2024, 11:59 PM IST</li>
+              <li>Problem Statement Reveal: 20th December 2024, 12:00 AM IST</li>
+              <li>Submission Deadline: 25th December 2024, 8:00 PM IST</li>
+              <li>Results and Award Ceremony: To be announced</li>
+            </ul>
+          </section>
         </div>
       </div>
-    </React.Fragment>
+    </div>
   );
 };
 
-export default guildelines;
+export default Guidelines;
+

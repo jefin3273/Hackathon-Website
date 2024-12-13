@@ -102,14 +102,15 @@ const hero = () => {
             <div className="curve"></div>
 
             <div className="title1">
-              <span className="hackathon"> {"Hack - A - Tank"}</span>
+              <span className="hackathon"> {"Hack - A - Ton"}</span>
               <br />
               {/* <p className="tag1"> A National Level 24 Hour Hackathon</p> */}
               {/* <span className="hackathon">Hackathon</span> */}
               <p className="description">
-                International <span> Level 24 hour Hackathon </span>
-                showcasing innovative solutions
-                <br /> and tech talents from across the world
+              Join us for an <span> International-Level 5-D Hackathon </span>
+              celebrating cutting-edge 
+                <br /> innovation and tech brilliance from across the globe.This corporate-level hackathon challenges
+                <br/>participants to create robust, real-world solutions that redefine industry standards.
               </p>
             </div>
 
@@ -193,7 +194,7 @@ const hero = () => {
                 <h3 className="text7">Problem Statements</h3>
                 </div>
               <p className="text8">
-                Problem statements will be delivered via email after registration.
+                Problem statements will be sent on Telegram channel after registration.
               </p>
             </div>
 
@@ -212,7 +213,7 @@ const hero = () => {
                   ONLINE
                 </p>
                 {/* <p className="text-white  text-[0.8vw] ">
-                  National Highway 45, Potheri, SRM Nagar, Kattankulathur, Tamil
+                  National Highway 45, Potheri, SRM Nagar, KatTonulathur, Tamil
                   Nadu - 603203
                 </p> */}
                 <div className="round"></div>

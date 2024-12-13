@@ -18,7 +18,7 @@ client.on("error", (err) => console.log("Error Occurred - MongoDB", err));
 client.on("close", () => console.log("Disconnected from mongodb"));
 
 const corsOptions = {
-  origin: ["https://hackatank.tech", "http://localhost:4444"],
+  origin: ["https://hackaTon.tech", "http://localhost:4444"],
 };
 app.use(express.json());
 app.post("/api/verify", async (req, res) => {
