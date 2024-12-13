@@ -70,7 +70,7 @@ const faqs = () => {
               />
             </h1>
             <p className="faqs-content-description">
-              Hack-A-Tank is the first 24-hour national-level hackathon
+              Hack-A-Tank is the first 24-hour international-level hackathon
               organized by the SRM Valliammai engineering college in
               collaboration with Whitehatians – Club of the Department of Cyber
               Security and the Student Branch of Computer Society of India (CSI-

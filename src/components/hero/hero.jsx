@@ -5,7 +5,7 @@ import KeyboardDoubleArrowRightSharpIcon from "@mui/icons-material/KeyboardDoubl
 import VanillaTilt from "vanilla-tilt";
 import Agenda from "./agenda";
 import Schedule from "./schedule";
-import Sponsors from "./sponsors";
+import Faqs from "./faqs";
 import { Footer } from "../";
 import { ReactComponent as Calender } from "../../assets/calender.svg";
 import { ReactComponent as Info } from "../../assets/info.svg";
@@ -20,7 +20,7 @@ const hero = () => {
       action: "click",
       label: "register",
     });
-    window.open("https://forms.gle/mqHSf1kpoTUiMURH6");
+    window.open("../events", "_self");
   };
   const handleCardClicks = (card) => {
     ReactGA.event({
@@ -31,10 +31,10 @@ const hero = () => {
     window.open(`${card}`, "_self");
   };
   const [countdown, setCountdown] = useState({
-    days: 0,
-    hours: 0,
-    minutes: 0,
-    seconds: 0,
+    days: 12,
+    hours: 15,
+    minutes: 45,
+    seconds: 30,
   });
   const handleCountdown = () => {
     const countDate = new Date("September 8, 2023 10:00:00").getTime();
@@ -93,25 +93,7 @@ const hero = () => {
       <div className="parent_hero">
         {/* <div className="progress_bar"></div> */}
         <div className=" tag-hero-mobile">
-          <img
-            src="/images/srm.webp"
-            alt="srm logo"
-            width="40vw"
-            className="hero-srm-logo"
-          />
-          <div className="tag">
-            <div>
-              <div>Celebrating 25</div>
-              <span>th</span>
-            </div>
-            Foundation Day of SRMVEC
-          </div>
-          <img
-            src="/images/srmvec.webp"
-            alt="srmvec logo"
-            width="60vw"
-            className="hero-srmvec-logo"
-          />
+
         </div>
 
         {/* ----------------------- Page 1 ------------------------- */}
@@ -125,9 +107,9 @@ const hero = () => {
               {/* <p className="tag1"> A National Level 24 Hour Hackathon</p> */}
               {/* <span className="hackathon">Hackathon</span> */}
               <p className="description">
-                National <span> Level 24 hour Hackathon </span>
+                International <span> Level 24 hour Hackathon </span>
                 showcasing innovative solutions
-                <br /> and tech talents from across the country
+                <br /> and tech talents from across the world
               </p>
             </div>
 
@@ -175,9 +157,9 @@ const hero = () => {
               <h3 className="text">
                 <div>
                   <div>
-                    <div> 8</div> <div> th</div>{" "}
+                    <div> 26</div> <div> th</div>{" "}
                   </div>{" "}
-                  September
+                  December
                 </div>
                 <Calender className="calender-icon" />
               </h3>
@@ -200,36 +182,34 @@ const hero = () => {
                 About
                 <ArrowRightWhite className="arrow-right-icon" />
               </p>
-              <p className="text6" onClick={() => handleCardClicks("/judges")}>
+              {/* <p className="text6" onClick={() => handleCardClicks("/judges")}>
                 Judge Panel
                 <ArrowRightWhite className="arrow-right-icon" />
-              </p>
+              </p> */}
             </div>
             {/* -------------------------- Column 3 * ---------------------------------- */}
             <div className="col3 animated-div">
               <div className="flex justify-items-start">
                 <h3 className="text7">Problem Statements</h3>
-              </div>
-              <p className="text8" onClick={() => handleCardClicks("/set1")}>
-                Collection 1 <ArrowRightBlack className="arrow-right-icon" />
-              </p>
-              <p className="text9" onClick={() => handleCardClicks("/set2")}>
-                Collection 2 <ArrowRightBlack className="arrow-right-icon" />
+                </div>
+              <p className="text8">
+                Problem statements will be delivered via email after registration.
               </p>
             </div>
+
             {/* -------------------------- Column 4  ---------------------------------- */}
             <div
               className="col4 animated-div"
-              onClick={() =>
-                window.open("https://goo.gl/maps/iaE4Kko8wqqHs4jx9")
-              }
+              // onClick={() =>
+              //   window.open("https://goo.gl/maps/iaE4Kko8wqqHs4jx9")
+              // }
             >
               <h3 className="text10">
                 Venue <Location className="location-icon" />
               </h3>
               <div className="flex flex-col ">
                 <p className="text-white pt-[2vh] text-[1vw] venue-text-mobile">
-                  SRM Valliammai Engineering College
+                  ONLINE
                 </p>
                 {/* <p className="text-white  text-[0.8vw] ">
                   National Highway 45, Potheri, SRM Nagar, Kattankulathur, Tamil
@@ -247,8 +227,7 @@ const hero = () => {
                 <div className="flex justify-center items-center gap-1"></div>
               </h3>
               <div className="flex items-start justify-between flex-col">
-                <p className="text14">SRMVEC CSI Student Branch </p>
-                <p className="text15">Whitehatians Cyber Club - VEC</p>
+                <p className="text14">TRINITE US - WE MAKE YOU GROW</p>
                 <div className="round2"></div>
               </div>
             </div>
@@ -260,7 +239,8 @@ const hero = () => {
       <div className="bg-sep"></div>
       <Schedule />
       <div className="bg-sep"></div>
-      <Sponsors />
+      <Faqs/>
+      <div className="bg-sep"></div>
       <Footer />
     </React.Fragment>
   );

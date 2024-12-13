@@ -1,137 +1,68 @@
-.parent-events {
-  padding: 0vh 12vw;
-  padding-top: 5vh;
-  height: 100vh;
+/* registration.css */
+
+.registration-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+form {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  max-width: 100%;
-  gap: 5vh;
-  color: white;
-  @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
-    padding: 5vh 3vw;
-    gap: 5vh;
-  }
+  gap: 15px;
 }
 
-.events-progress-bar {
-  width: 100%;
-}
-#line {
-  position: relative;
-  margin-top: 2vh;
-  isolation: isolate;
-  height: 0.7vh;
-  border-radius: 1vw;
-  overflow: hidden;
-  left: 9vw;
-}
-#line-progress {
-  position: absolute;
-  z-index: 1;
-  width: 0.3%;
-  height: 0.7vh;
-  background-color: white;
-  transition: all 0.3s ease-in-out;
-}
-#line::before {
-  content: " ";
-  position: absolute;
-  z-index: -1;
-  background-color: slategrey;
-  opacity: 0.3;
-  width: 75%;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-}
-.events-progress-bar ul {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  width: 100%;
-}
-
-.events-progress-bar ul li {
-  cursor: pointer;
-  font-family: exo;
-  font-weight: 600;
-  @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
-    font-size: 4vw;
-  }
-}
-.events-container {
-  display: flex;
-  justify-content: space-between;
-  border: 2px dotted purple;
-  padding: 1vh 1vw;
-  border-radius: 1vw;
-  background-color: rgb(255, 255, 255, 0.1);
-  backdrop-filter: blur(0.8vw);
-  @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
-    font-size: 3.5vw;
-    border-radius: 3vw;
-    padding: 2vh 3vw;
-  }
-}
-
-.section-content {
-  display: none;
-  color: white;
-}
-.section-format {
+label {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  gap: 2vh;
+  font-size: 14px;
+  color: #555;
 }
-.section-format > h1 {
-  font-size: 2vw;
-  text-transform: uppercase;
-  font-family: audiowide;
-  letter-spacing: 2px;
-  color: yellow;
-  display: flex;
-  align-items: center;
-  width: 100%;
-  justify-content: space-around;
-  @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
-    font-size: 7vw;
-  }
+
+input,
+select {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
 }
-.section-format > h1 > span {
-  font-family: fira sans condensed;
-  text-transform: capitalize;
-  letter-spacing: normal;
-  font-size: 1.1vw;
-  font-weight: 700;
-  color: yellowgreen;
+
+button {
+  padding: 10px 15px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
   cursor: pointer;
-  padding: 0.2vh 1vw;
-  border: 1px solid white;
-  border-radius: 0.3vw;
+}
+
+button:disabled {
+  background-color: #aaa;
+  cursor: not-allowed;
+}
+
+.payment-section {
+  margin-top: 20px;
+}
+
+.qr-code-placeholder {
+  height: 150px;
+  width: 150px;
+  background-color: #ddd;
+  margin: 10px auto;
   display: flex;
+  justify-content: center;
   align-items: center;
-  gap: 1vw;
-}
-.section-format > h1 > span > span {
-  font-size: 1vw;
-}
-.section-format p {
-  width: 100%;
-}
-.active {
-  display: block;
-  animation: eventsFade 0.5s ease-in forwards;
-}
-@keyframes eventsFade {
-  0% {
-    opacity: 0;
-    transform: translateY(3vh);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
+  font-size: 14px;
+  color: #555;
+  border-radius: 8px;
 }

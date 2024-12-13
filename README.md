@@ -4,7 +4,7 @@
 
 Welcome to the Hackathon Management Web Platform repository! This comprehensive, full-stack web platform is designed to facilitate seamless participation and management for hackathon events. Developed with cutting-edge technologies, it offers a dynamic and engaging experience for both participants and organizers.
 <br />
-> **Note:** This platform was initially developed for Hackatank, a national-level 24-hour hackathon celebrating SRMVEC's 25th-year anniversary. The use of any images, content, or logos in this repository is not permitted without proper authorization.
+> **Note:** This platform was initially developed for Hackatank, an international-level 24-hour hackathon celebrating SRMVEC's 25th-year anniversary. The use of any images, content, or logos in this repository is not permitted without proper authorization.
 <br /><br />
 ## Table of Contents
 
