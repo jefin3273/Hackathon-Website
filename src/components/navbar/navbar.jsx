@@ -10,43 +10,43 @@ import { ReactComponent as Grid } from "../../assets/navgrid.svg";
 import ReactGA from "react-ga";
 
 const Navbar = () => {
-  const handleInsta = () => {
-    ReactGA.event({
-      category: "Social Icon",
-      action: "click",
-      label: "Instagram",
-    });
-    window.open("https://www.instagram.com/srmveccsisb");
-    window.open("https://www.instagram.com/whitehatians");
-  };
-  const handleFb = () => {
-    ReactGA.event({
-      category: "Social Icon",
-      action: "click",
-      label: "Facebook",
-    });
-    window.open("https://www.facebook.com/srmveccsisb");
-    window.open("https://www.facebook.com/@whitehatians");
-  };
-  const handleYt = () => {
-    ReactGA.event({
-      category: "Social Icon",
-      action: "click",
-      label: "Youtube",
-    });
-    window.open("https://www.youtube.com/@SRMVECCSIAN");
-    window.open("https://www.youtube.com/@whitehatians");
-  };
+  // const handleInsta = () => {
+  //   ReactGA.event({
+  //     category: "Social Icon",
+  //     action: "click",
+  //     label: "Instagram",
+  //   });
+  //   window.open("https://www.instagram.com/srmveccsisb");
+  //   window.open("https://www.instagram.com/whitehatians");
+  // };
+  // const handleFb = () => {
+  //   ReactGA.event({
+  //     category: "Social Icon",
+  //     action: "click",
+  //     label: "Facebook",
+  //   });
+  //   window.open("https://www.facebook.com/srmveccsisb");
+  //   window.open("https://www.facebook.com/@whitehatians");
+  // };
+  // const handleYt = () => {
+  //   ReactGA.event({
+  //     category: "Social Icon",
+  //     action: "click",
+  //     label: "Youtube",
+  //   });
+  //   window.open("https://www.youtube.com/@SRMVECCSIAN");
+  //   window.open("https://www.youtube.com/@whitehatians");
+  // };
 
-  const handleDiscord = () => {
-    ReactGA.event({
-      category: "Social Icon",
-      action: "click",
-      label: "Youtube",
-    });
+  // const handleDiscord = () => {
+  //   ReactGA.event({
+  //     category: "Social Icon",
+  //     action: "click",
+  //     label: "Youtube",
+  //   });
 
-    window.open("https://discord.gg/w77zzjVkEB?event=1141717757382107197");
-  };
+  //   window.open("https://discord.gg/w77zzjVkEB?event=1141717757382107197");
+  // };
   const handleRegisterClick = () => {
     ReactGA.event({
       category: "Button",
@@ -89,7 +89,7 @@ const Navbar = () => {
           <div className="title" onClick={() => window.open("/", "_self")}>
             <img src="/images/diamond.webp" className="logo" alt="Logo" />
             Hackathon
-            <div className="socials">
+            {/* {/* <div className="socials">
               <div className="insta">
                 <SocialIcon
                   onClick={handleInsta}
@@ -130,8 +130,8 @@ const Navbar = () => {
                     width: "3vw",
                   }}
                 />
-              </div>
-            </div>
+              </div> */}
+            {/* </div> */}
           </div>
 
           <ul>

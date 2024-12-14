@@ -170,9 +170,9 @@ const hero = () => {
               >
                 Guidelines <ArrowRightWhite className="arrow-right-icon" />
               </p>
-              <p className="text3" onClick={() => handleCardClicks("/events")}>
+              {/* <p className="text3" onClick={() => handleCardClicks("/events")}>
                 Events <ArrowRightWhite className="arrow-right-icon" />
-              </p>
+              </p> */}
             </div>
             {/* -------------------------- Column 2 * ---------------------------------- */}
             <div className="col2 animated-div">
