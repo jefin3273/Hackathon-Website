@@ -1,6 +1,6 @@
 export { default as Events } from "./events/events.jsx";
 export { default as Footer } from "./footer/footer.jsx";
-export { default as Guidelines } from "./guidelines/guidelines.jsx";
+export { default as Guidelines } from "./guidelines/main.jsx";
 export { default as Hero } from "./hero/hero.jsx";
 export { default as Set1 } from "./projects/set1.jsx";
 export { default as Set2 } from "./projects/set2.jsx";
