@@ -7,7 +7,7 @@ import {
   Navbar,
   Hero,
   Events,
-  Guildelines,
+  Guidelines,
   Set1,
   Set2,
   Judges,
@@ -55,7 +55,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
           element={
             <div className="guidelines-bg">
               <Navbar />
-              <Guildelines />
+              <Guidelines />
             </div>
           }
         />
