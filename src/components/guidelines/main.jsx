@@ -89,7 +89,7 @@ const Guidelines = () => {
           <section className="guidelines-section" ref={addToRefs}>
             <h2>Prizes and Recognition</h2>
             <ul>
-              <li>Total Prize Pool: ₹2,00,000+</li>
+              <li>Total Prize Pool: ₹1,00,000+</li>
               <li>1st Prize: ₹75,000</li>
               <li>2nd Prize: ₹50,000</li>
               <li>3rd Prize: ₹25,000</li>

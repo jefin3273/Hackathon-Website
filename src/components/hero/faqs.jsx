@@ -67,7 +67,7 @@ const faqs = () => {
               />
             </h1>
             <p className="faqs-content-description">
-            This is an international 5-day virtual hackathon where participants solve real-world corporate-level problems. It’s a platform to showcase talent, learn, and compete for a prize pool of Rs. 1Lakh.
+            This is an international 5-day virtual hackathon where participants solve real-world corporate-level problems. It’s a platform to showcase talent, learn, and compete for a prize pool of Rs. 1Lakh+.
             </p>
           </div>
 
