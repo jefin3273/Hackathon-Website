@@ -56,12 +56,7 @@ const section2 = () => {
               />
             </div>
             <div className="agenda-des">
-              A hackathon is an event where individuals or teams come together
-              to collaboratively work on solving specific problems or challenges
-              within a limited timeframe, usually ranging from a few hours to a
-              couple of days. It is a great platform for programmers, designers,
-              entrepreneurs, and other creative minds to showcase their skills,
-              creativity, and problem-solving abilities.
+            A hackathon is an intensive event where individuals and teams unite to tackle real-world challenges within a fixed timeframe. This 5-day international hackathon offers a dynamic platform for participants to showcase their creativity, technical expertise, and problem-solving abilities. Teams will collaborate on corporate-level projects, pushing the boundaries of innovation to deliver impactful solutions.
             </div>
           </div>
         </div>
@@ -77,13 +72,8 @@ const section2 = () => {
               Vision
             </div>
             <div className="about-vision-description" id="agenda-right">
-              Empowering Innovators to Transform Tomorrow. Our hackathon
-              envisions a world where creative minds converge to tackle pressing
-              challenges, forging solutions that redefine possibilities. Through
-              dynamic collaboration, cutting-edge technology, and unwavering
-              determination, we ignite a spark that sparks real change. Join us
-              to hack a brighter future and leave an indelible mark on the
-              landscape of innovation.
+            Empowering Innovators to Build a Better Tomorrow<br/>
+            Our hackathon envisions a world where creativity meets purpose to solve pressing global challenges. Through collaborative innovation and advanced technology, we aim to transform bold ideas into actionable solutions. Join us in shaping the future of technology and innovation, leaving a legacy that inspires change.
             </div>
           </div>
           <div className="mission">
@@ -97,13 +87,8 @@ const section2 = () => {
               Mission
             </div>
             <div className="about-mission-description" id="agenda-left">
-              Fueling innovation, our hackathon is a nexus of minds reimagining
-              solutions for a dynamic world. Through tech-driven teamwork, we
-              catalyze change, pushing boundaries and shaping the future. Join
-              us to ideate, collaborate, and leave an indelible mark on the
-              tapestry of progress.we ignite a spark that sparks real change.
-              Join us to hack a brighter future and leave an indelible mark on
-              the landscape of innovation
+            Fueling the Future Through Innovation<br/>
+            Our mission is to create a collaborative environment that nurtures creativity and fosters groundbreaking solutions. This hackathon serves as a launchpad for ideas that drive progress and redefine industries. Join us to ideate, innovate, and turn your vision into reality while contributing to a brighter, more connected world.
             </div>
           </div>
         </div>

@@ -158,7 +158,7 @@ const hero = () => {
               <h3 className="text">
                 <div>
                   <div>
-                    <div> 26</div> <div> th</div>{" "}
+                    <div> 20</div> <div> th</div>{" "}
                   </div>{" "}
                   December
                 </div>
@@ -166,7 +166,7 @@ const hero = () => {
               </h3>
               <p
                 className="text2"
-                onClick={() => handleCardClicks("/guidelines")}
+                onClick={() => handleCardClicks("../guidelines")}
               >
                 Guidelines <ArrowRightWhite className="arrow-right-icon" />
               </p>
@@ -179,7 +179,7 @@ const hero = () => {
               <h3 className="text4">
                 Information Details <Info className="info-icon" />
               </h3>
-              <p className="text5" onClick={() => handleCardClicks("/about")}>
+              <p className="text5" onClick={() => handleCardClicks("../about")}>
                 About
                 <ArrowRightWhite className="arrow-right-icon" />
               </p>
