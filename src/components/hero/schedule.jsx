@@ -35,122 +35,83 @@ const schedule = () => {
             <div className="container" id="timeline-container">
               <h2 className="date">
                 <div>
-                  Aug
+                  December
                   <div>
-                    <div> 17</div> <div>th</div>
+                    <div> 14</div> <div>th</div>
                   </div>
                 </div>
               </h2>
               <h2 className="container-title">Registration opens</h2>
               <p className="container-description">
-                Registration is open for tech enthusiasts, developers, and
-                problem solvers from all backgrounds. Join us for an
-                exhilarating 24 hours of coding, collaboration, and competition
-                as we tackle real-world challenges and develop cutting-edge
-                solutions
+                Registration is Now Open!<br />
+                Calling all tech enthusiasts, developers, and innovators—our 5-day international hackathon awaits you! Embark on an exhilarating journey of coding, collaboration, and competition to tackle real-world challenges and craft corporate-level solutions. Secure your spot today!
               </p>
               <span className="circle"></span>
             </div>
-            <div className="container ">
-              <h2 className="container-title">Abstract Submission</h2>
+            <div className="container">
               <h1 className="date">
                 <div>
-                  Aug
+                  December
                   <div>
-                    <div>17</div> <div>th</div>
-                  </div>
-                  -Aug
-                  <div>
-                    <div>28</div> <div>th</div>
-                  </div>
-                </div>
-              </h1>
-              <p className="container-description">
-                Submit your abstracts and be a part of the forefront of
-                innovation! We invite you to share your groundbreaking ideas and
-                research at our esteemed hackathon event. This is your
-                opportunity to present your unique insights and solutions 🚀👩‍💻
-              </p>
-              <span className="circle"></span>
-            </div>
-            <div className="container ">
-              <h1 className="date">
-                <div>
-                  Aug
-                  <div>
-                    <div>28</div> <div>th</div>
+                    <div>19</div> <div>th</div>
                   </div>
                 </div>
               </h1>
               <h2 className="container-title">Registration Closes</h2>
               <p className="container-description">
-                Last call for registration! Time is running out to be a part of
-                our extraordinary hackathon event. Don't miss this incredible
-                opportunity to join a community of tech enthusiasts, developers,
-                and innovators from around the world. Registration will close
-                soon, so act fast and secure your spot
+                Final Call for Registration!<br />
+                Time is running out to join our international hackathon. Don't miss your chance to collaborate with global talent, tackle high-impact challenges, and compete for prizes worth over Rs. 2L. Register now before 19th December 2024, 11:59 PM, and secure your place in this transformative event.
               </p>
-
               <span className="circle"></span>
             </div>
-            <div className="container ">
-              <h2 className="container-title">Finalists Announcements</h2>
+            <div className="container">
+              <h2 className="container-title">Hackathon Begins</h2>
               <h1 className="date">
                 <div>
-                  Sep
+                  December
                   <div>
-                    <div>1</div> <div>st</div>
+                    <div>20</div> <div>th</div>
                   </div>
                 </div>
               </h1>
               <p className="container-description">
-                Step into the limelight – the moment we've all been waiting for
-                is here! We're thrilled to announce the finalists of our highly
-                competitive hackathon event. After meticulous evaluation and
-                deliberation, we've handpicked the most promising and innovative
-                teams to move forward to the final round
+                The wait is over! The challenge begins as we unveil the problem statements for this year’s hackathon. It's time to harness your creativity, showcase your skills, and start building innovative corporate-level solutions.
               </p>
               <span className="circle"></span>
             </div>
-
-            <div className="container ">
-              <h2 className="container-title">Hackathon Finale</h2> <br />
+            <div className="container">
+              <h2 className="container-title">Hackathon is Live!</h2> <br />
               <h1 className="date">
                 <div>
-                  sep
+                  December
                   <div>
-                    <div>8</div> <div>th</div>
+                    <div>20</div> <div>th</div>
                   </div>
-                  - sep
+                  - December
                   <div>
-                    <div>9</div> <div>th</div>
+                    <div>25</div> <div>th</div>
                   </div>
                 </div>
               </h1>
               <p className="container-description">
-                Get ready for the moment of triumph – the Hackathon Finale is
-                just around the corner! After an intense and exhilarating
-                journey, we've arrived at the grand finale, where the most
-                ingenious minds will showcase their remarkable solutions.
+                The countdown is over, and the challenge begins! 🎉💻
+                The hackathon is officially live, and participants from around the globe are now diving into coding, brainstorming, and innovating. The competition is fierce as teams collaborate to tackle the problem statements and craft corporate-level solutions.
+                Remember, every line of code counts, and every idea has the potential to redefine the future. Best of luck to all participants—may the best innovation win! 🚀
               </p>
               <span className="circle"></span>
             </div>
-            <div className="container ">
-              <h2 className="container-title">Award Ceremony</h2>
+            <div className="container">
+              <h2 className="container-title">Hackathon Ends and Submission Announcement</h2>
               <h1 className="date">
                 <div>
-                  sep
+                  December
                   <div>
-                    <div>9</div> <div>th</div>
+                    <div>25</div> <div>th</div>
                   </div>
                 </div>
               </h1>
               <p className="container-description">
-                The judges deliberate, and winners are announced in various
-                categories, celebrating outstanding projects, creativity, and
-                teamwork. The successful conclusion of the hackathon is
-                commemorated with an awards ceremony and well-deserved
-                celebrations.
+                As the hackathon concludes, it’s time for teams to submit their work. Participants must upload their GitHub repository link and demo video for evaluation by our panel of judges. The event will culminate in an awards ceremony celebrating exceptional innovation, creativity, and teamwork.
               </p>
               <span className="circle"></span>
             </div>
@@ -165,63 +126,18 @@ const schedule = () => {
           </div>
           <div className="timeline-mobile" id="timeline">
             <div className="container-mobile" id="timeline-container">
-              <h2 className="container-title-mobile">Registration opens</h2>{" "}
+              <h2 className="container-title-mobile">Registration opens</h2>
               <h2 className="date-mobile">
                 <div>
-                  Aug
+                  December
                   <div>
-                    <div>17</div> <div>th</div>
+                    <div>14</div> <div>th</div>
                   </div>
                 </div>
               </h2>
               <p className="container-description-mobile">
-                Registration is open for tech enthusiasts, developers, and
-                problem solvers from all backgrounds. Join us for an
-                exhilarating 24 hours of coding, collaboration, and competition
-                as we tackle real-world challenges and develop cutting-edge
-                solutions
-              </p>
-              <span className="circle-mobile"></span>
-            </div>
-            <div className="container-mobile" id="timeline-container">
-              <h2 className="container-title-mobile">Abstract Submission</h2>
-              <h1 className="date-mobile">
-                {" "}
-                <div>
-                  Aug
-                  <div>
-                    <div>17</div> <div>th</div>
-                  </div>
-                  -Aug
-                  <div>
-                    <div>28</div> <div>th</div>
-                  </div>
-                </div>
-              </h1>
-              <p className="container-description-mobile">
-                Submit your abstracts and be a part of the forefront of
-                innovation! We invite you to share your groundbreaking ideas and
-                research at our esteemed hackathon event. This is your
-                opportunity to present your unique insights and solutions 🚀👩‍💻
-              </p>
-              <span className="circle-mobile "></span>
-            </div>
-            <div className="container-mobile ">
-              <h2 className="container-title-mobile">Finalists Annoncements</h2>
-              <h1 className="date-mobile">
-                <div>
-                  Sep
-                  <div>
-                    <div>1</div> <div>st</div>
-                  </div>
-                </div>
-              </h1>
-              <p className="container-description-mobile">
-                Step into the limelight – the moment we've all been waiting for
-                is here! We're thrilled to announce the finalists of our highly
-                competitive hackathon event. After meticulous evaluation and
-                deliberation, we've handpicked the most promising and innovative
-                teams to move forward to the final round
+                Registration is Now Open!<br />
+                Calling all tech enthusiasts, developers, and innovators—our 5-day international hackathon awaits you! Embark on an exhilarating journey of coding, collaboration, and competition to tackle real-world challenges and craft corporate-level solutions. Secure your spot today!
               </p>
               <span className="circle-mobile"></span>
             </div>
@@ -229,60 +145,67 @@ const schedule = () => {
               <h2 className="container-title-mobile">Registration Closes</h2>
               <h1 className="date-mobile">
                 <div>
-                  Aug
+                  December
                   <div>
-                    <div>28</div> <div>th</div>
+                    <div>19</div> <div>th</div>
                   </div>
                 </div>
               </h1>
               <p className="container-description-mobile">
-                Last call for registration! Time is running out to be a part of
-                our extraordinary hackathon event. Don't miss this incredible
-                opportunity to join a community of tech enthusiasts, developers,
-                and innovators from around the world. Registration will close
-                soon, so act fast and secure your spot
+                Final Call for Registration!<br />
+                Time is running out to join our international hackathon. Don't miss your chance to collaborate with global talent, tackle high-impact challenges, and compete for prizes worth over Rs. 2L. Register now before 19th December 2024, 11:59 PM, and secure your place in this transformative event.
+              </p>
+              <span className="circle-mobile"></span>
+            </div>
+            <div className="container-mobile">
+              <h2 className="container-title-mobile">Hackathon Begins</h2>
+              <h1 className="date-mobile">
+                <div>
+                  December
+                  <div>
+                    <div>20</div> <div>th</div>
+                  </div>
+                </div>
+              </h1>
+              <p className="container-description-mobile">
+                The wait is over! The challenge begins as we unveil the problem statements for this year’s hackathon. It's time to harness your creativity, showcase your skills, and start building innovative corporate-level solutions.
+              </p>
+              <span className="circle-mobile"></span>
+            </div>
+            <div className="container-mobile">
+              <h2 className="container-title-mobile">Hackathon is Live!</h2> <br />
+              <h1 className="date-mobile">
+                <div>
+                  December
+                  <div>
+                    <div>20</div> <div>th</div><br />
+                  </div>
+                  - December
+                  <div>
+                    <div>25</div> <div>th</div>
+                  </div>
+                </div>
+              </h1>
+              <p className="container-description-mobile">
+              The countdown is over, and the challenge begins! 🎉💻
+The hackathon is officially live, and participants from around the globe are now diving into coding, brainstorming, and innovating. The competition is fierce as teams collaborate to tackle the problem statements and craft corporate-level solutions.
+
+Remember, every line of code counts, and every idea has the potential to redefine the future. Best of luck to all participants—may the best innovation win! 🚀
               </p>
               <span className="circle-mobile"></span>
             </div>
             <div className="container-mobile ">
-              <h2 className="container-title-mobile">Hackathon Finale</h2>{" "}
-              <br />
+              <h2 className="container-title-mobile">Hackathon Ends and Submission Announcement</h2>
               <h1 className="date-mobile">
                 <div>
-                  sep
+                  December
                   <div>
-                    <div>8</div> <div>th</div>
-                  </div>
-                  - sep
-                  <div>
-                    <div>9</div> <div>th</div>
+                    <div>25</div> <div>th</div>
                   </div>
                 </div>
               </h1>
               <p className="container-description-mobile">
-                Get ready for the moment of triumph – the Hackathon Finale is
-                just around the corner! After an intense and exhilarating
-                journey, we've arrived at the grand finale, where the most
-                ingenious minds will showcase their remarkable solutions.
-              </p>
-              <span className="circle-mobile"></span>
-            </div>
-            <div className="container-mobile ">
-              <h2 className="container-title-mobile">Award Ceremony</h2>
-              <h1 className="date-mobile">
-                <div>
-                  sep
-                  <div>
-                    <div>9</div> <div>th</div>
-                  </div>
-                </div>
-              </h1>
-              <p className="container-description-mobile">
-                The judges deliberate, and winners are announced in various
-                categories, celebrating outstanding projects, creativity, and
-                teamwork. The successful conclusion of the hackathon is
-                commemorated with an awards ceremony and well-deserved
-                celebrations.
+              As the hackathon concludes, it’s time for teams to submit their work. Participants must upload their GitHub repository link and demo video for evaluation by our panel of judges. The event will culminate in an awards ceremony celebrating exceptional innovation, creativity, and teamwork.
               </p>
               <span className="circle-mobile"></span>
             </div>
