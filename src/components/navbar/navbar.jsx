@@ -55,6 +55,7 @@ const Navbar = () => {
     });
     window.open("../events", "_self");
   };
+
   const handleScroll = (id) => {
     ReactGA.event({
       category: "Button",
@@ -147,9 +148,9 @@ const Navbar = () => {
             <li>
               <p onClick={() => handleScroll("#faqs")}>FAQs</p>
             </li>
-            <li>
-              <p onClick={() => handleScroll("#contact")}>Contact</p>
-            </li>
+            {/* <li>
+              <p onClick={() => handleScroll("#footer")}>Contact</p>
+            </li> */}
           </ul>
           <div className="last">
             <h2 className="register">
@@ -170,7 +171,7 @@ const Navbar = () => {
             </div>
             <div className="last-mobile">
               <h2 className="register-mobile">
-                <a href="https://forms.gle/mqHSf1kpoTUiMURH6" target="_blank">
+                <a href="../events" target="_self">
                   Register
                 </a>
               </h2>

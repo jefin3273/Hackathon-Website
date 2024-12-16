@@ -1,0 +1,115 @@
+.participant-form {
+  text-align: left;
+}
+
+.participant-form h2 {
+  margin-bottom: 1.5rem;
+}
+
+.participant-form .form-group {
+  margin-bottom: 1.25rem;
+}
+
+.participant-form label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+.participant-form input {
+  width: 100%;
+  padding: 0.75rem;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.participant-form input:focus {
+  border-color: var(--primary-color);
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.2);
+}
+
+.participant-form .btn-add,
+.participant-form .btn-next,
+.participant-form .btn-prev {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  margin-right: 0.75rem;
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+.participant-form .btn-add:hover,
+.participant-form .btn-next:hover,
+.participant-form .btn-prev:hover {
+  background-color: #2980b9;
+  transform: translateY(-2px);
+}
+
+.participant-form .btn-add:active,
+.participant-form .btn-next:active,
+.participant-form .btn-prev:active {
+  transform: translateY(0);
+}
+
+.participant-form .btn-prev {
+  background-color: #95a5a6;
+}
+
+.participant-form .btn-prev:hover {
+  background-color: #7f8c8d;
+}
+
+.participant-form .warning {
+  color: #e74c3c;
+  margin-top: 0.75rem;
+  font-weight: 500;
+}
+
+.participant-list {
+  margin-top: 1.5rem;
+  border-top: 2px solid #e0e0e0;
+  padding-top: 1.5rem;
+}
+
+.participant-list h3 {
+  margin-bottom: 1rem;
+  color: var(--primary-color);
+}
+
+.participant-item {
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  transition: box-shadow 0.3s ease;
+}
+
+.participant-item:hover {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.participant-form .error {
+  color: red;
+  font-size: 0.8rem;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+.participant-form .form-group {
+  margin-bottom: 15px;
+}
+
+.participant-form .warning {
+  color: orange;
+  font-weight: bold;
+  margin-top: 10px;
+}
