@@ -12,13 +12,13 @@ const footer = () => {
       <div className="parent-footer">
         <div className="footer-section">
           <p className="hackathon-info">
-            <strong>Hackathon 2024:</strong> Join us for a 5-day international hackathon showcasing innovative solutions and corporate-level projects. Team size: 2-5 members. Registration ends on <strong>19th December 2024, 11:59 PM</strong>.
-            Prize Pool: <strong>₹2,00,000+</strong>. <a href="#register">Register now!</a>
+            <strong>Hack-a-ton 2024:</strong> Join us for a 5-day international hackathon showcasing innovative solutions and corporate-level projects. Team size: 2-5 members. Registration ends on <strong>19th December 2024, 11:59 PM</strong>.
+            Prize Pool: <strong>₹1,00,000+</strong>. <a href="../events">Register now!</a>
           </p>
         </div>
         <div className="footer-section">
           <p className="contact-info">
-            For inquiries, contact us at: <a href="mailto:your-email@example.com">your-email@example.com</a>
+            For inquiries, contact us at: <a href="mailto:your-email@example.com">hack_a_ton@triniteus.com</a>
           </p>
         </div>
         <div className="footer-section">

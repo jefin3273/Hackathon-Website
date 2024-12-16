@@ -44,6 +44,18 @@ const Guidelines = () => {
       <h1 className="guidelines-title">Hack-A-Thon Guidelines</h1>
       <div className="guidelines-container">
         <div className="guidelines-content">
+
+        <section className="guidelines-section" ref={addToRefs}>
+            <h2>Prizes and Recognition**</h2>
+            <ul>
+              <li>Total Prize Pool: ₹1,00,000+</li>
+              <li>1st Prize: ₹75,000</li>
+              <li>2nd Prize: ₹50,000</li>
+              <li>3rd Prize: ₹25,000</li>
+              <li>Additional rewards include certificates and internship opportunities as well.</li>
+            </ul>
+          </section>
+
           <section className="guidelines-section" ref={addToRefs}>
             <h2>General Guidelines</h2>
             <ul>
@@ -87,17 +99,6 @@ const Guidelines = () => {
           </section>
 
           <section className="guidelines-section" ref={addToRefs}>
-            <h2>Prizes and Recognition</h2>
-            <ul>
-              <li>Total Prize Pool: ₹1,00,000+</li>
-              <li>1st Prize: ₹75,000</li>
-              <li>2nd Prize: ₹50,000</li>
-              <li>3rd Prize: ₹25,000</li>
-              <li>Additional rewards include certificates and internship opportunities as well.</li>
-            </ul>
-          </section>
-
-          <section className="guidelines-section" ref={addToRefs}>
             <h2>Important Dates</h2>
             <ul>
               <li>Registration Deadline: 19th December 2024, 11:59 PM IST</li>
@@ -107,6 +108,8 @@ const Guidelines = () => {
             </ul>
           </section>
         </div>
+        <h1 className="guidelines-footer">**Terms and Conditions:
+        </h1>
       </div>
     </div>
   );

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Lato:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Audiowide&family=Lato:wght@400;700&display=swap");
 
 .parent-guidelines {
   display: flex;
@@ -14,16 +14,22 @@
 }
 
 @keyframes gradientBG {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 .guidelines-title {
   padding: 2rem 0;
   font-size: 3.5rem;
   color: #e94560;
-  font-family: 'Audiowide', cursive;
+  font-family: "Audiowide", cursive;
   letter-spacing: 3px;
   font-weight: bold;
   text-transform: uppercase;
@@ -32,8 +38,12 @@
 }
 
 @keyframes glow {
-  from { text-shadow: 0 0 5px #e94560, 0 0 10px #e94560; }
-  to { text-shadow: 0 0 10px #e94560, 0 0 20px #e94560; }
+  from {
+    text-shadow: 0 0 5px #e94560, 0 0 10px #e94560;
+  }
+  to {
+    text-shadow: 0 0 10px #e94560, 0 0 20px #e94560;
+  }
 }
 
 .guidelines-container {
@@ -61,7 +71,7 @@
   font-size: 1rem;
   background-color: rgba(255, 255, 255, 0.05);
   backdrop-filter: blur(10px);
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   font-weight: 400;
   box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -73,7 +83,7 @@
 }
 
 .guidelines-section h2 {
-  font-family: 'Audiowide', cursive;
+  font-family: "Audiowide", cursive;
   color: #e94560;
   margin-bottom: 1rem;
 }
@@ -90,7 +100,7 @@
 }
 
 .guidelines-section li::before {
-  content: '•';
+  content: "•";
   color: #e94560;
   font-size: 1.5rem;
   position: absolute;
@@ -125,3 +135,9 @@
   }
 }
 
+.guidelines-footer {
+  margin-top: 2rem;
+  color: white;
+  font-size: 0.7rem;
+  text-align: left;
+}

@@ -179,10 +179,11 @@ const hero = () => {
               <h3 className="text4">
                 Information Details <Info className="info-icon" />
               </h3>
-              <p className="text5" onClick={() => handleCardClicks("../about")}>
-                About
-                <ArrowRightWhite className="arrow-right-icon" />
-              </p>
+              <p className="text5" onClick={() => handleCardClicks("https://triniteus.com/about-us/")}>
+  About
+  <ArrowRightWhite className="arrow-right-icon" />
+</p>
+
               {/* <p className="text6" onClick={() => handleCardClicks("/judges")}>
                 Judge Panel
                 <ArrowRightWhite className="arrow-right-icon" />

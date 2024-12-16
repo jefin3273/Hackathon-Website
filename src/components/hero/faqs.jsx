@@ -54,6 +54,10 @@ const FAQs = () => {
     {
       question: "What are the prerequisites for registering?",
       answer: "Participants should have a keen interest in technology and innovation. Knowledge of programming, design, or relevant technical skills is advantageous."
+    },
+    {
+      question: "What is Triniteus?",
+      answer: "Triniteus is a leading business solutions provider, at the forefront of technological innovation. We are honored to be the proud organizers of this exciting hackathon."
     }
   ];
 
