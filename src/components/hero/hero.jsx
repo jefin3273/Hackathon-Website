@@ -13,7 +13,17 @@ import { ReactComponent as Location } from "../../assets/location.svg";
 import { ReactComponent as ArrowRightWhite } from "../../assets/arrow-right-white.svg";
 import { ReactComponent as ArrowRightBlack } from "../../assets/arrow-right-black.svg";
 
-const hero = () => {
+const Hero = () => {
+  // Event target date - modify this to your specific event date
+  const TARGET_DATE = new Date("December 20, 2024 10:00:00").getTime();
+
+  const [countdown, setCountdown] = useState({
+    days: "00",
+    hours: "00",
+    minutes: "00",
+    seconds: "00"
+  });
+
   const handleRegisterClick = () => {
     ReactGA.event({
       category: "Button",
@@ -22,6 +32,7 @@ const hero = () => {
     });
     window.open("../events", "_self");
   };
+
   const handleCardClicks = (card) => {
     ReactGA.event({
       category: "Button",
@@ -30,51 +41,45 @@ const hero = () => {
     });
     window.open(`${card}`, "_self");
   };
-  const [countdown, setCountdown] = useState({
-    days: 12,
-    hours: 15,
-    minutes: 45,
-    seconds: 30,
-  });
-  const handleCountdown = () => {
-    const countDate = new Date("September 8, 2023 10:00:00").getTime();
+
+  const calculateTimeRemaining = () => {
     const now = new Date().getTime();
-    const diff = countDate - now;
-    {
-      if (now > countDate) return;
+    const difference = TARGET_DATE - now;
+
+    if (difference < 0) {
+      // Event has passed
+      setCountdown({
+        days: "00",
+        hours: "00", 
+        minutes: "00",
+        seconds: "00"
+      });
+      return;
     }
+
+    const day = 1000 * 60 * 60 * 24;
+    const hour = 1000 * 60 * 60;
+    const minute = 1000 * 60;
     const second = 1000;
-    const minute = second * 60;
-    const hour = minute * 60;
-    const day = hour * 24;
 
-    var textDay = Math.floor(diff / day);
-    var textHour = Math.floor((diff % day) / hour);
-    var textMinute = Math.floor((diff % hour) / minute);
-    var textSecond = Math.floor((diff % minute) / second);
+    const days = Math.floor(difference / day);
+    const hours = Math.floor((difference % day) / hour);
+    const minutes = Math.floor((difference % hour) / minute);
+    const seconds = Math.floor((difference % minute) / second);
 
-    if (textDay.toString().length == 1) {
-      textDay = `0${textDay}`;
-    }
-    if (textHour.toString().length == 1) {
-      textHour = `0${textHour}`;
-    }
-    if (textMinute.toString().length == 1) {
-      textMinute = `0${textMinute}`;
-    }
-    if (textSecond.toString().length == 1) {
-      textSecond = `0${textSecond}`;
-    }
+    // Pad single digits with leading zero
+    const formatNumber = (num) => num.toString().padStart(2, '0');
 
     setCountdown({
-      days: textDay,
-      hours: textHour,
-      minutes: textMinute,
-      seconds: textSecond,
+      days: formatNumber(days),
+      hours: formatNumber(hours),
+      minutes: formatNumber(minutes),
+      seconds: formatNumber(seconds)
     });
   };
 
   useEffect(() => {
+    // Initialize VanillaTilt
     const tilt = VanillaTilt.init(
       document.querySelectorAll(".anim"),
       {
@@ -83,11 +88,22 @@ const hero = () => {
       },
       []
     );
-    const interval = setInterval(() => handleCountdown(), 1000);
+
+    // Initial calculation
+    calculateTimeRemaining();
+
+    // Set up interval to update countdown every second
+    const interval = setInterval(calculateTimeRemaining, 1000);
+
+    // Cleanup interval on component unmount
     return () => {
       clearInterval(interval);
+      if (tilt && tilt.destroy) {
+        tilt.destroy();
+      }
     };
   }, []);
+
   return (
     <React.Fragment>
       <div className="parent_hero">
@@ -123,10 +139,8 @@ const hero = () => {
                 <KeyboardDoubleArrowRightSharpIcon style={{ fontSize: 35 }} />
               </div>
             </div>
+
             <div className="countdown-main">
-              {/* <h2 className="countdown-text">
-            Join us for the ultimate coding extravaganza!
-          </h2> */}
               <div className="countdown anim">
                 <div className="day-card anim">
                   <h3 className="day">{countdown.days}</h3>
@@ -234,18 +248,17 @@ const hero = () => {
               </div>
             </div>
           </div>
-        </section>
-        {/* -------------------------- Page 2 -------------------------- */}
+          </section>
       </div>
       <Agenda />
       <div className="bg-sep"></div>
       <Schedule />
       <div className="bg-sep"></div>
-      <Faqs/>
+      <Faqs />
       <div className="bg-sep"></div>
       <Footer />
     </React.Fragment>
   );
 };
 
-export default hero;
+export default Hero;

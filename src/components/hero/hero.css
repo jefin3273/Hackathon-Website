@@ -342,9 +342,9 @@
 }
 .right_side {
   display: grid;
-  flex-basis: 43%;
+  flex-basis: 50%;
   grid-template-columns: 1fr 1fr;
-  gap: 0.5vh 1vw;
+  gap: 1vh 2vw;
   margin-top: -2vh;
   @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
     margin-top: 5vh;
