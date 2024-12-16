@@ -60,14 +60,14 @@ const RegistrationForm = () => {
         // Insert participants with default values for optional fields
         for (const participant of participants) {
           await client.query(
-            'INSERT INTO participants (group_registration_id, name, age, mobile_number, email, id_proof_url) VALUES ($1, $2, $3, $4, $5, $6)',
+            'INSERT INTO participants (group_registration_id, name, age, mobile_number, email,id_proof_url) VALUES ($1, $2, $3, $4, $5, $6)',
             [
               groupRegistrationId, 
               participant.name || '', 
               participant.age || 0, 
               participant.mobileNumber || 'N/A', 
-              participant.email || 'no-email@example.com', 
-              participant.idProofUrl || null
+              participant.email || 'no-email@example.com',
+              participant.idProofLink || null,
             ]
           );
         }

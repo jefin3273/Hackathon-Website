@@ -6,9 +6,18 @@ const ParticipantForm = ({ participants, addParticipant, onNext, onPrev }) => {
   const [age, setAge] = useState('');
   const [mobile, setMobile] = useState('');
   const [email, setEmail] = useState('');
-  const [idProof, setIdProof] = useState('');
-  const [photo, setPhoto] = useState(null);
+  const [idType, setIdType] = useState('');
+  const [idProofLink, setIdProofLink] = useState('');
   const [errors, setErrors] = useState({});
+
+  // ID Types for dropdown
+  const ID_TYPES = [
+    'College/Workspace ID', 
+    'Aadhaar Card', 
+    'PAN Card', 
+    'Voter ID', 
+    'Driving License'
+  ];
 
   const validateForm = () => {
     const newErrors = {};
@@ -44,14 +53,17 @@ const ParticipantForm = ({ participants, addParticipant, onNext, onPrev }) => {
       newErrors.email = 'Please enter a valid email address';
     }
 
-    // ID Proof validation
-    if (!idProof.trim()) {
-      newErrors.idProof = 'ID Proof is required';
+    // ID Type validation
+    if (!idType) {
+      newErrors.idType = 'ID Type is required';
     }
 
-    // Photo validation
-    if (!photo) {
-      newErrors.photo = 'Photo is required';
+    // ID Proof Link validation
+    const urlRegex = /^(https?:\/\/)?([\da-z\.-]+)\.([a-z\.]{2,6})([\/\w \.-]*)*\/?$/;
+    if (!idProofLink.trim()) {
+      newErrors.idProofLink = 'ID Proof Link is required';
+    } else if (!urlRegex.test(idProofLink)) {
+      newErrors.idProofLink = 'Please enter a valid URL';
     }
 
     setErrors(newErrors);
@@ -67,8 +79,8 @@ const ParticipantForm = ({ participants, addParticipant, onNext, onPrev }) => {
         age: parseInt(age), 
         mobileNumber: mobile, 
         email: email.trim(), 
-        idProof: idProof.trim(), 
-        photo 
+        idType,
+        idProofLink: idProofLink.trim()
       };
 
       // Check if participant already exists
@@ -94,37 +106,9 @@ const ParticipantForm = ({ participants, addParticipant, onNext, onPrev }) => {
       setAge('');
       setMobile('');
       setEmail('');
-      setIdProof('');
-      setPhoto(null);
+      setIdType('');
+      setIdProofLink('');
       setErrors({});
-    }
-  };
-
-  const handlePhotoChange = (e) => {
-    const file = e.target.files[0];
-    
-    // Photo size and type validation
-    if (file) {
-      const MAX_FILE_SIZE = 5 * 1024 * 1024; // 5MB
-      const ALLOWED_TYPES = ['image/jpeg', 'image/png', 'image/gif'];
-
-      if (!ALLOWED_TYPES.includes(file.type)) {
-        setErrors(prev => ({
-          ...prev, 
-          photo: 'Only JPEG, PNG, and GIF images are allowed'
-        }));
-        return;
-      }
-
-      if (file.size > MAX_FILE_SIZE) {
-        setErrors(prev => ({
-          ...prev, 
-          photo: 'File size should not exceed 5MB'
-        }));
-        return;
-      }
-
-      setPhoto(file);
     }
   };
 
@@ -174,24 +158,30 @@ const ParticipantForm = ({ participants, addParticipant, onNext, onPrev }) => {
           {errors.email && <p className="error">{errors.email}</p>}
         </div>
         <div className="form-group">
-          <label htmlFor="idProof">ID Proof</label>
-          <input
-            type="text"
-            id="idProof"
-            value={idProof}
-            onChange={(e) => setIdProof(e.target.value)}
-          />
-          {errors.idProof && <p className="error">{errors.idProof}</p>}
+          <label htmlFor="idType">ID Type</label>
+          <select
+            id="idType"
+            value={idType}
+            onChange={(e) => setIdType(e.target.value)}
+          >
+            <option value="">Select ID Type</option>
+            {ID_TYPES.map((type) => (
+              <option key={type} value={type}>{type}</option>
+            ))}
+          </select>
+          {errors.idType && <p className="error">{errors.idType}</p>}
         </div>
         <div className="form-group">
-          <label htmlFor="photo">Photo</label>
+          <label htmlFor="idProofLink">ID Proof Link</label>
           <input
-            type="file"
-            id="photo"
-            accept="image/jpeg,image/png,image/gif"
-            onChange={handlePhotoChange}
+            type="text"
+            id="idProofLink"
+            placeholder="Paste the link to your ID proof"
+            value={idProofLink}
+            onChange={(e) => setIdProofLink(e.target.value)}
           />
-          {errors.photo && <p className="error">{errors.photo}</p>}
+          {errors.idProofLink && <p className="error">{errors.idProofLink}</p>}
+          <small>Please ensure the link is publicly accessible</small>
         </div>
         <button type="submit" className="btn-add">Add Participant</button>
       </form>
@@ -214,6 +204,7 @@ const ParticipantForm = ({ participants, addParticipant, onNext, onPrev }) => {
             <p><strong>Name:</strong> {participant.name}</p>
             <p><strong>Age:</strong> {participant.age}</p>
             <p><strong>Email:</strong> {participant.email}</p>
+            <p><strong>ID Type:</strong> {participant.idType}</p>
           </div>
         ))}
       </div>
