@@ -45,8 +45,8 @@ const Guidelines = () => {
       <div className="guidelines-container">
         <div className="guidelines-content">
 
-        <section className="guidelines-section" ref={addToRefs}>
-            <h2>Prizes and Recognition**</h2>
+          <section className="guidelines-section" ref={addToRefs}>
+            <h2>Prizes and Recognition</h2>
             <ul>
               <li>Total Prize Pool: ₹1,00,000+</li>
               <li>1st Prize: ₹75,000</li>
@@ -108,12 +108,25 @@ const Guidelines = () => {
             </ul>
           </section>
         </div>
-        <h1 className="guidelines-footer">**Terms and Conditions:
-        </h1>
-      </div>
-    </div>
+        </div>
+<div className="guidelines-footer-container">
+  <h1 className="guidelines-footer">**Terms and Conditions:</h1>
+  <div className="terms-conditions">
+    <ol>
+      <li>Prizes and rewards are subject to modifications at the discretion of the organizing committee.</li>
+      <li>Participants must adhere to the timelines and deadlines mentioned above.</li>
+      <li>All submitted projects should be original, and plagiarism will result in disqualification.</li>
+      <li>Judges' decisions regarding the selection and ranking of winners will be final and binding.</li>
+      <li>The prize distribution is contingent on meeting minimum participation and submission thresholds.</li>
+      <li>Organizers reserve the right to withhold prizes for categories where projects fail to meet the required standards of innovation or implementation.</li>
+      <li>Registration fees are non-refundable under any circumstances.</li>
+      <li>Participants agree to allow the organizers to use their submissions for promotional purposes.</li>
+      <li>All participants must comply with the ethical guidelines and code of conduct.</li>
+    </ol>
+  </div>
+</div>
+</div>
   );
 };
 
 export default Guidelines;
-

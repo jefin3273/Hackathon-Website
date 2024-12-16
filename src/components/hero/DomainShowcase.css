@@ -1,0 +1,58 @@
+:root {
+    --primary-color: #3498db;
+    --secondary-color: #2ecc71;
+    --text-color: #333;
+    --background-color: #f0f0f0;
+    --card-background: #ffffff;
+    --card-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .domain-showcase {
+    padding: 2rem;
+    background-color: var(--background-color);
+  }
+  
+  .domain-showcase__title {
+    font-size: 2rem;
+    color: var(--text-color);
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .domain-showcase__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+  }
+  
+  .domain-card {
+    background-color: var(--card-background);
+    border-radius: 8px;
+    padding: 1.5rem;
+    text-align: center;
+    box-shadow: var(--card-shadow);
+    transition: all 0.3s ease;
+  }
+  
+  .domain-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+  }
+  
+  .domain-card__icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+  
+  .domain-card__name {
+    font-size: 1.25rem;
+    color: var(--text-color);
+  }
+  
+  @media (max-width: 768px) {
+    .domain-showcase__grid {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  

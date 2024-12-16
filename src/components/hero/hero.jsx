@@ -12,10 +12,12 @@ import { ReactComponent as Info } from "../../assets/info.svg";
 import { ReactComponent as Location } from "../../assets/location.svg";
 import { ReactComponent as ArrowRightWhite } from "../../assets/arrow-right-white.svg";
 import { ReactComponent as ArrowRightBlack } from "../../assets/arrow-right-black.svg";
+import { Domain } from "@mui/icons-material";
+import DomainShowcase from "./DomainShowcase";
 
 const Hero = () => {
   // Event target date - modify this to your specific event date
-  const TARGET_DATE = new Date("December 20, 2024 10:00:00").getTime();
+  const TARGET_DATE = new Date("December 20, 2024 00:00:00").getTime();
 
   const [countdown, setCountdown] = useState({
     days: "00",
@@ -253,6 +255,8 @@ const Hero = () => {
       <Agenda />
       <div className="bg-sep"></div>
       <Schedule />
+      <div className="bg-sep"></div>
+      <DomainShowcase />
       <div className="bg-sep"></div>
       <Faqs />
       <div className="bg-sep"></div>

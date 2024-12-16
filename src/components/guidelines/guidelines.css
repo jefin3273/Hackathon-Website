@@ -138,6 +138,31 @@
 .guidelines-footer {
   margin-top: 2rem;
   color: white;
-  font-size: 0.7rem;
+  font-size: 0.7rem; /* Ensure consistent font size */
   text-align: left;
+}
+
+.terms-conditions {
+  margin-top: 1rem; /* Slight adjustment for spacing */
+  color: white;
+  font-size: 0.7rem; /* Match the font size */
+  text-align: left;
+}
+
+.guidelines-footer-container {
+  display: block; /* Ensure all elements are left-aligned */
+  width: 100%;
+  margin-left: 28%;
+}
+
+.terms-conditions ol {
+  margin-left: 1.5rem; /* Add some indentation for the list */
+  padding-left: 0;
+  list-style-type: decimal; /* Ensures the numbers are in decimal format (1, 2, 3...) */
+}
+
+.terms-conditions ol li {
+  margin-bottom: 0.5rem; /* Add spacing between list items */
+  font-size: 0.7rem; /* Ensure consistent font size */
+  color: white; /* Match the text color with the design */
 }
