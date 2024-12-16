@@ -93,7 +93,7 @@ const Guidelines = () => {
               <li>1st Prize: ₹75,000</li>
               <li>2nd Prize: ₹50,000</li>
               <li>3rd Prize: ₹25,000</li>
-              <li>Additional rewards include certificates and swag.</li>
+              <li>Additional rewards include certificates and internship opportunities as well.</li>
             </ul>
           </section>
 
