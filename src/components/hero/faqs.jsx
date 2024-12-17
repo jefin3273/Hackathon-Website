@@ -45,7 +45,7 @@ const FAQs = () => {
     },
     {
       question: "What is the prize pool?",
-      answer: "The total prize pool exceeds Rs. 2,00,000, with the first prize being Rs. 75,000."
+      answer: "The total prize pool exceeds Rs. 1,00,000, with the first prize being Rs. 75,000."
     },
     {
       question: "What is the team size?",
