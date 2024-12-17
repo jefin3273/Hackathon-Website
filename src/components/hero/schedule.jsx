@@ -37,7 +37,7 @@ const schedule = () => {
                 <div>
                   December
                   <div>
-                    <div> 14</div> <div>th</div>
+                    <div> 17</div> <div>th</div>
                   </div>
                 </div>
               </h2>
@@ -53,14 +53,14 @@ const schedule = () => {
                 <div>
                   December
                   <div>
-                    <div>19</div> <div>th</div>
+                    <div>21</div> <div>st</div>
                   </div>
                 </div>
               </h1>
               <h2 className="container-title">Registration Closes</h2>
               <p className="container-description">
                 Final Call for Registration!<br />
-                Time is running out to join our international hackathon. Don't miss your chance to collaborate with global talent, tackle high-impact challenges, and compete for prizes worth over Rs. 2L. Register now before 19th December 2024, 11:59 PM, and secure your place in this transformative event.
+                Time is running out to join our international hackathon. Don't miss your chance to collaborate with global talent, tackle high-impact challenges, and compete for prizes worth over Rs. 2L. Register now before 21st December 2024, 11:59 PM, and secure your place in this transformative event.
               </p>
               <span className="circle"></span>
             </div>
@@ -70,7 +70,7 @@ const schedule = () => {
                 <div>
                   December
                   <div>
-                    <div>20</div> <div>th</div>
+                    <div>22</div> <div>nd</div>
                   </div>
                 </div>
               </h1>
@@ -85,7 +85,7 @@ const schedule = () => {
                 <div>
                   December
                   <div>
-                    <div>20</div> <div>th</div>
+                    <div>22</div> <div>nd</div>
                   </div>
                   - December
                   <div>
@@ -131,7 +131,7 @@ const schedule = () => {
                 <div>
                   December
                   <div>
-                    <div>14</div> <div>th</div>
+                    <div>17</div> <div>th</div>
                   </div>
                 </div>
               </h2>
@@ -147,13 +147,13 @@ const schedule = () => {
                 <div>
                   December
                   <div>
-                    <div>19</div> <div>th</div>
+                    <div>21</div> <div>st</div>
                   </div>
                 </div>
               </h1>
               <p className="container-description-mobile">
                 Final Call for Registration!<br />
-                Time is running out to join our international hackathon. Don't miss your chance to collaborate with global talent, tackle high-impact challenges, and compete for prizes worth over Rs. 2L. Register now before 19th December 2024, 11:59 PM, and secure your place in this transformative event.
+                Time is running out to join our international hackathon. Don't miss your chance to collaborate with global talent, tackle high-impact challenges, and compete for prizes worth over Rs. 2L. Register now before 21st December 2024, 11:59 PM, and secure your place in this transformative event.
               </p>
               <span className="circle-mobile"></span>
             </div>
@@ -163,7 +163,7 @@ const schedule = () => {
                 <div>
                   December
                   <div>
-                    <div>20</div> <div>th</div>
+                    <div>22</div> <div>nd</div>
                   </div>
                 </div>
               </h1>
@@ -178,7 +178,7 @@ const schedule = () => {
                 <div>
                   December
                   <div>
-                    <div>20</div> <div>th</div><br />
+                    <div>22</div> <div>nd</div><br />
                   </div>
                   - December
                   <div>
