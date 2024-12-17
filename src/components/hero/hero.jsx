@@ -174,7 +174,7 @@ const Hero = () => {
               <h3 className="text">
                 <div>
                   <div>
-                    <div> 20</div> <div> th</div>{" "}
+                    <div> 22</div> <div> nd</div>{" "}
                   </div>{" "}
                   December
                 </div>
