@@ -113,3 +113,39 @@
   font-weight: bold;
   margin-top: 10px;
 }
+
+.terms-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.terms-group input[type="checkbox"] {
+  margin-right: 10px;
+  width: auto;
+}
+
+.terms-group label {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+}
+
+.terms-group span {
+  margin-left: 5px;
+  color: #4a90e2;
+  text-decoration: underline;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.terms-group span:hover {
+  color: #357abd;
+}
+
+small {
+  color: #777;
+  font-size: 12px;
+  display: block;
+  margin-top: 5px;
+}

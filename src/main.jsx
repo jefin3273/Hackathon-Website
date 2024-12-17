@@ -12,6 +12,7 @@ import {
   Set2,
   Judges,
   About,
+  Terms_Conditions,
   Verify,
   Login,
 } from "./components";
@@ -74,6 +75,15 @@ ReactDOM.createRoot(document.getElementById("root")).render(
             <div className="set1-bg">
               <Navbar />
               <Set1 />
+            </div>
+          }
+        />
+                <Route
+          path="/Terms_Conditions"
+          element={
+            <div className="guidelines-bg">
+              <Navbar />
+              <Terms_Conditions />
             </div>
           }
         />

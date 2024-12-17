@@ -33,7 +33,7 @@ const FAQs = () => {
     },
     {
       question: "How much is the registration fee?",
-      answer: "The registration fee is just Rs. 200 per team."
+      answer: "The registration fee is just Rs. 300 per team."
     },
     {
       question: "Is the hackathon online or offline?",

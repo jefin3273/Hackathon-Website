@@ -1,80 +1,96 @@
 .payment-gateway {
-    text-align: center;
-  }
-  
-  .payment-gateway h2 {
-    margin-bottom: 1.5rem;
-    color: var(--primary-color);
-  }
-  
-  .payment-gateway p {
-    font-size: 1.25rem;
-    margin-bottom: 1.5rem;
-    font-weight: 500;
-  }
-  
-  .payment-gateway .btn-pay,
-  .payment-gateway .btn-prev {
-    display: inline-block;
-    padding: 0.75rem 1.5rem;
-    margin: 0 0.75rem;
-    color: white;
-    border: none;
-    border-radius: 8px;
-    font-size: 1rem;
-    font-weight: 500;
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.1s ease;
-  }
-  
-  .payment-gateway .btn-pay {
-    background-color: var(--secondary-color);
-  }
-  
-  .payment-gateway .btn-pay:hover {
-    background-color: #27ae60;
-    transform: translateY(-2px);
-  }
-  
-  .payment-gateway .btn-prev {
-    background-color: #95a5a6;
-  }
-  
-  .payment-gateway .btn-prev:hover {
-    background-color: #7f8c8d;
-    transform: translateY(-2px);
-  }
-  
-  .payment-gateway .btn-pay:active,
-  .payment-gateway .btn-prev:active {
-    transform: translateY(0);
-  }
-  
-  .payment-details {
-    background-color: #f8f9fa;
-    border-radius: 8px;
-    padding: 1.5rem;
-    margin-bottom: 1.5rem;
-    text-align: left;
-  }
-  
-  .payment-details h3 {
-    margin-bottom: 1rem;
-    color: var(--primary-color);
-  }
-  
-  .payment-details ul {
-    list-style-type: none;
-    padding: 0;
-  }
-  
-  .payment-details li {
-    margin-bottom: 0.5rem;
-  }
-  
-  .payment-details strong {
-    font-weight: 600;
-    margin-right: 0.5rem;
-  }
-  
-  
+  text-align: center;
+}
+
+.payment-gateway h2 {
+  margin-bottom: 1.5rem;
+  color: var(--primary-color);
+}
+
+.payment-gateway p {
+  font-size: 1.25rem;
+  margin-bottom: 1.5rem;
+  font-weight: 500;
+}
+
+.payment-gateway .btn-pay,
+.payment-gateway .btn-prev {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  margin: 0 0.75rem;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+.payment-gateway .btn-pay {
+  background-color: var(--secondary-color);
+}
+
+.payment-gateway .btn-pay:hover {
+  background-color: #27ae60;
+  transform: translateY(-2px);
+}
+
+.payment-gateway .btn-prev {
+  background-color: #95a5a6;
+}
+
+.payment-gateway .btn-prev:hover {
+  background-color: #7f8c8d;
+  transform: translateY(-2px);
+}
+
+.payment-gateway .btn-pay:active,
+.payment-gateway .btn-prev:active {
+  transform: translateY(0);
+}
+
+.payment-details h3 {
+  margin-bottom: 1rem;
+  color: var(--primary-color);
+}
+
+.payment-details table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.payment-details td {
+  padding: 0.5rem 0;
+}
+
+.payment-details .label {
+  text-align: left;
+  font-weight: 200;
+  font-size: 0.8rem;
+}
+
+.payment-details .amount {
+  text-align: right;
+  font-weight: 200;
+  font-size: 0.8rem;
+}
+
+.payment-details .total-row {
+  border-top: 1px solid var(--primary-color);
+}
+
+.payment-details .total-row td {
+  padding-top: 0.75rem;
+  font-weight: bold;
+}
+
+.label-reg-fee {
+  text-align: left;
+  font-weight: bold;
+}
+
+.amount-reg-fee {
+  text-align: right;
+  font-weight: bold;
+}

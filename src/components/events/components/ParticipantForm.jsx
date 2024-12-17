@@ -9,6 +9,7 @@ const ParticipantForm = ({ participants, addParticipant, onNext, onPrev }) => {
   const [idType, setIdType] = useState('');
   const [idProofLink, setIdProofLink] = useState('');
   const [errors, setErrors] = useState({});
+  const [termsAccepted, setTermsAccepted] = useState(false);
 
   // ID Types for dropdown
   const ID_TYPES = [
@@ -112,6 +113,11 @@ const ParticipantForm = ({ participants, addParticipant, onNext, onPrev }) => {
     }
   };
 
+  const handleTermsClick = () => {
+    // Redirect to terms and conditions page
+    window.open('../../Terms_Conditions', '_blank');
+  };
+
   return (
     <div className="participant-form">
       <h2>Participant Information</h2>
@@ -183,11 +189,31 @@ const ParticipantForm = ({ participants, addParticipant, onNext, onPrev }) => {
           {errors.idProofLink && <p className="error">{errors.idProofLink}</p>}
           <small>Please ensure the link is publicly accessible</small>
         </div>
+        <div className="form-group terms-group">
+          <input
+            type="checkbox"
+            id="terms-checkbox"
+            checked={termsAccepted}
+            onChange={(e) => setTermsAccepted(e.target.checked)}
+          />
+          <label htmlFor="terms-checkbox">
+            I accept the{' '}
+            <span 
+              onClick={handleTermsClick} 
+              style={{color: 'blue', cursor: 'pointer', textDecoration: 'underline'}}
+            >
+              Terms and Conditions
+            </span>
+          </label>
+        </div>
         <button type="submit" className="btn-add">Add Participant</button>
       </form>
       
-      {participants.length >= 2 && participants.length <= 5 && (
+      {participants.length >= 2 && participants.length <= 5 && termsAccepted && (
         <button onClick={onNext} className="btn-next">Next</button>
+      )}
+      {participants.length >= 2 && participants.length <= 5 && !termsAccepted && (
+        <p className="warning">Please accept the Terms and Conditions to proceed</p>
       )}
       {participants.length < 2 && (
         <p className="warning">Please add at least 2 participants.</p>

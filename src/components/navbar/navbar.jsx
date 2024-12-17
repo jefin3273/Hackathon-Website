@@ -195,9 +195,6 @@ const Navbar = () => {
               <li>
                 <p onClick={() => handleScroll("#faqs")}>FAQs</p>
               </li>
-              <li>
-                <p onClick={() => handleScroll("#contact")}>Contact</p>
-              </li>
             </ul>
           </div>
         </div>

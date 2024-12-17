@@ -1,0 +1,49 @@
+/* Container for the guidelines footer */
+.guidelines-footer-container {
+  display: block; /* Left-align all child elements */
+  width: 100%;
+  margin-left: 20%; /* Adjust alignment for better centering */
+  padding: 1rem 0; /* Add top and bottom padding for spacing */
+  box-sizing: border-box; /* Ensure padding doesn't affect width */
+}
+
+/* Terms and conditions styling */
+.terms-conditions {
+  background-color: #1e1e1e; /* Dark background for contrast */
+  color: #ffffff; /* White text color for readability */
+  font-family: Arial, sans-serif; /* Consistent font styling */
+  font-size: 0.9rem; /* Readable font size */
+  line-height: 1.6; /* Improve readability with line spacing */
+  padding: 1.5rem; /* Add internal spacing */
+  border-radius: 8px; /* Smooth rounded corners for design aesthetics */
+}
+
+/* Styling for ordered list in terms and conditions */
+.terms-conditions ol {
+  margin-left: 2rem; /* Indent the list slightly */
+  padding-left: 0; /* Remove default padding */
+  list-style-type: decimal; /* Maintain numeric list style */
+}
+
+/* List item styling */
+.terms-conditions ol li {
+  margin-bottom: 1rem; /* Add spacing between list items */
+  font-size: 0.9rem; /* Ensure consistent and readable font size */
+  color: #e0e0e0; /* Light gray text for subtle contrast */
+}
+
+/* Optional: Responsive design tweaks */
+@media (max-width: 768px) {
+  .guidelines-footer-container {
+    margin-left: 5%; /* Adjust for smaller screens */
+  }
+
+  .terms-conditions {
+    font-size: 0.8rem; /* Reduce font size for smaller screens */
+    padding: 1rem; /* Adjust padding */
+  }
+
+  .terms-conditions ol li {
+    font-size: 0.8rem; /* Adjust list item font size */
+  }
+}

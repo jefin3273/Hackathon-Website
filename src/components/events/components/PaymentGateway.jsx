@@ -49,13 +49,24 @@ const PaymentGateway = ({ onComplete, onPrev }) => {
     <div className="payment-gateway">
       <h2>Payment Gateway</h2>
       <div className="payment-details">
-        <h3>Registration Details</h3>
-        <ul>
-          <li><strong>Registration Fee:</strong> ₹300</li>
-          <li><strong>Processing Fee:</strong> ₹7.08</li>
-          <li><strong>Total Amount:</strong> ₹307.08</li>
-        </ul>
-      </div>
+  <h3>Registration Details</h3>
+  <table>
+    <tbody>
+      <tr>
+        <td className="label-reg-fee">Registration Fee:</td>
+        <td className="amount-reg-fee">₹300</td>
+      </tr>
+      <tr>
+        <td className="label">Processing Fee:</td>
+        <td className="amount">₹7.08</td>
+      </tr>
+      <tr className="total-row">
+        <td className="label"><strong>Total Amount:</strong></td>
+        <td className="amount"><strong>₹307.08</strong></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
       <button
         onClick={handlePayment}
         className="btn-pay"

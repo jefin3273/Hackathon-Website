@@ -166,3 +166,14 @@
   font-size: 0.7rem; /* Ensure consistent font size */
   color: white; /* Match the text color with the design */
 }
+
+.Terms-and-Conditions {
+  margin-top: 1rem; /* Slight adjustment for spacing */
+  color: white;
+  font-size: 0.7rem; /* Match the font size */
+  text-align: left;
+}
+
+.Terms-and-Conditions :hover {
+  color: #0595ef;
+}
