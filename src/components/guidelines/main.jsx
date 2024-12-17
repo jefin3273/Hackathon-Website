@@ -72,7 +72,7 @@ const Guidelines = () => {
               <li>Teams must have 2-5 members, registering under a single group name.</li>
               <li>Open to tech enthusiasts, students, and professionals globally.</li>
               <li>Registration fee: ₹300 per team (non-refundable).</li>
-              <li>Registration deadline: 19th December 2024, 11:59 PM IST.</li>
+              <li>Registration deadline: 21st December 2024, 11:59 PM IST.</li>
               <li>Join the provided Telegram group for official updates.</li>
             </ul>
           </section>
@@ -80,9 +80,9 @@ const Guidelines = () => {
           <section className="guidelines-section" ref={addToRefs}>
             <h2>Hackathon Rules</h2>
             <ul>
-              <li>Problem statements revealed on 20th December 2024, 12:00 AM IST.</li>
-              <li>Development: 20th December 2024 (12:00 AM) to 25th December 2024 (8:00 PM) IST.</li>
-              <li>Submit via GitHub repository and a 5-minute presentation/video.</li>
+              <li>Problem statements revealed on 22nd December 2024, 12:00 AM IST.</li>
+              <li>Development: 22nd December 2024 (12:00 AM) to 25th December 2024 (8:00 PM) IST.</li>
+              <li>Submit via GitHub repository and a detailed explanation video.</li>
               <li>All work must be original and created during the hackathon.</li>
               <li>Use any programming language, frameworks, or tools.</li>
             </ul>
@@ -111,8 +111,8 @@ const Guidelines = () => {
           <section className="guidelines-section" ref={addToRefs}>
             <h2>Important Dates</h2>
             <ul>
-              <li>Registration Deadline: 19th December 2024, 11:59 PM IST</li>
-              <li>Problem Statement Reveal: 20th December 2024, 12:00 AM IST</li>
+              <li>Registration Deadline: 21st December 2024, 11:59 PM IST</li>
+              <li>Problem Statement Reveal: 22nd December 2024, 12:00 AM IST</li>
               <li>Submission Deadline: 25th December 2024, 8:00 PM IST</li>
               <li>Results and Award Ceremony: To be announced</li>
             </ul>
