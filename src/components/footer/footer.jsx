@@ -12,7 +12,7 @@ const footer = () => {
       <div className="parent-footer">
         <div className="footer-section">
           <p className="hackathon-info">
-            <strong>Hack-a-ton 2024:</strong> Join us for a 5-day international hackathon showcasing innovative solutions and corporate-level projects. Team size: 2-5 members. Registration ends on <strong>19th December 2024, 11:59 PM</strong>.
+            <strong>Hack-a-ton 2024:</strong> Join us for a 5-day international hackathon showcasing innovative solutions and corporate-level projects. Team size: 2-5 members. Registration ends on <strong>21st December 2024, 11:59 PM</strong>.
             Prize Pool: <strong>₹1,00,000+</strong>. <a href="../events">Register now!</a>
           </p>
         </div>
