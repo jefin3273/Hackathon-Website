@@ -53,14 +53,14 @@ const schedule = () => {
                 <div>
                   December
                   <div>
-                    <div>21</div> <div>st</div>
+                    <div>27</div> <div>th</div>
                   </div>
                 </div>
               </h1>
               <h2 className="container-title">Registration Closes</h2>
               <p className="container-description">
                 Final Call for Registration!<br />
-                Time is running out to join our international hackathon. Don't miss your chance to collaborate with global talent, tackle high-impact challenges, and compete for prizes worth over Rs. 2L. Register now before 21st December 2024, 11:59 PM, and secure your place in this transformative event.
+                Time is running out to join our international hackathon. Don't miss your chance to collaborate with global talent, tackle high-impact challenges, and compete for prizes worth over Rs. 2L. Register now before 27th December 2024, 11:59 PM, and secure your place in this transformative event.
               </p>
               <span className="circle"></span>
             </div>
@@ -70,7 +70,7 @@ const schedule = () => {
                 <div>
                   December
                   <div>
-                    <div>22</div> <div>nd</div>
+                    <div>28</div> <div>th</div>
                   </div>
                 </div>
               </h1>
@@ -85,11 +85,11 @@ const schedule = () => {
                 <div>
                   December
                   <div>
-                    <div>22</div> <div>nd</div>
+                    <div>28</div> <div>th</div>
                   </div>
-                  - December
+                  - January
                   <div>
-                    <div>25</div> <div>th</div>
+                    <div>1</div> <div>st</div>
                   </div>
                 </div>
               </h1>
@@ -104,9 +104,9 @@ const schedule = () => {
               <h2 className="container-title">Hackathon Ends and Submission Announcement</h2>
               <h1 className="date">
                 <div>
-                  December
+                  January
                   <div>
-                    <div>25</div> <div>th</div>
+                    <div>1</div> <div>st</div>
                   </div>
                 </div>
               </h1>
@@ -147,13 +147,13 @@ const schedule = () => {
                 <div>
                   December
                   <div>
-                    <div>21</div> <div>st</div>
+                    <div>27</div> <div>th</div>
                   </div>
                 </div>
               </h1>
               <p className="container-description-mobile">
                 Final Call for Registration!<br />
-                Time is running out to join our international hackathon. Don't miss your chance to collaborate with global talent, tackle high-impact challenges, and compete for prizes worth over Rs. 2L. Register now before 21st December 2024, 11:59 PM, and secure your place in this transformative event.
+                Time is running out to join our international hackathon. Don't miss your chance to collaborate with global talent, tackle high-impact challenges, and compete for prizes worth over Rs. 2L. Register now before 27th December 2024, 11:59 PM, and secure your place in this transformative event.
               </p>
               <span className="circle-mobile"></span>
             </div>
@@ -163,7 +163,7 @@ const schedule = () => {
                 <div>
                   December
                   <div>
-                    <div>22</div> <div>nd</div>
+                    <div>28</div> <div>th</div>
                   </div>
                 </div>
               </h1>
@@ -178,11 +178,11 @@ const schedule = () => {
                 <div>
                   December
                   <div>
-                    <div>22</div> <div>nd</div><br />
+                    <div>28</div> <div>th</div><br />
                   </div>
-                  - December
+                  - DJanuary
                   <div>
-                    <div>25</div> <div>th</div>
+                    <div>1</div> <div>st</div>
                   </div>
                 </div>
               </h1>
@@ -198,9 +198,9 @@ Remember, every line of code counts, and every idea has the potential to redefin
               <h2 className="container-title-mobile">Hackathon Ends and Submission Announcement</h2>
               <h1 className="date-mobile">
                 <div>
-                  December
+                  January
                   <div>
-                    <div>25</div> <div>th</div>
+                    <div>1</div> <div>st</div>
                   </div>
                 </div>
               </h1>
