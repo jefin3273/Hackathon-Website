@@ -17,7 +17,7 @@ import DomainShowcase from "./DomainShowcase";
 
 const Hero = () => {
   // Event target date - modify this to your specific event date
-  const TARGET_DATE = new Date("December 22, 2024 00:00:00").getTime();
+  const TARGET_DATE = new Date("December 28, 2024 00:00:00").getTime();
 
   const [countdown, setCountdown] = useState({
     days: "00",
@@ -174,7 +174,7 @@ const Hero = () => {
               <h3 className="text">
                 <div>
                   <div>
-                    <div> 22</div> <div> nd</div>{" "}
+                    <div> 28</div> <div> th</div>{" "}
                   </div>{" "}
                   December
                 </div>
