@@ -13,3 +13,4 @@ export { default as Success } from "./qr/success.jsx";
 export { default as Denied } from "./qr/denied.jsx";
 export { default as Login } from "./login/login.jsx";
 export { default as Terms_Conditions } from "./Terms_Conditions/main.jsx";
+export { default as Problem_Statements } from "./Problem_Statements/Problem_Statements.jsx";

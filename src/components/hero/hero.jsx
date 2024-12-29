@@ -35,13 +35,13 @@ const Hero = () => {
     window.open("../events", "_self");
   };
 
-  const handleCardClicks = (card) => {
+  const handleCardClicks = () => {
     ReactGA.event({
       category: "Button",
       action: "click",
-      label: `${card}`,
+      label: "register",
     });
-    window.open(`${card}`, "_self");
+    window.open("../Problem_Statements", "_self");
   };
 
   const calculateTimeRemaining = () => {
@@ -209,9 +209,9 @@ const Hero = () => {
             <div className="col3 animated-div">
               <div className="flex justify-items-start">
                 <h3 className="text7">Problem Statements</h3>
-                </div>
-              <p className="text8">
-                Problem statements will be sent on Telegram channel after registration.
+              </div>
+              <p className="text8" onClick={() => handleCardClicks()}>
+                All Problem Statements <ArrowRightBlack className="arrow-right-icon" />
               </p>
             </div>
 

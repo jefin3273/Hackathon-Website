@@ -11,10 +11,11 @@ import {
   Set1,
   Set2,
   Judges,
-  About,
   Terms_Conditions,
+  About,
   Verify,
   Login,
+  Problem_Statements,
 } from "./components";
 
 import ReactGA from "react-ga";
@@ -48,6 +49,15 @@ ReactDOM.createRoot(document.getElementById("root")).render(
             <div className="events-bg">
               <Navbar />
               <Events />
+            </div>
+          }
+        />
+                <Route
+          path="/Problem_Statements"
+          element={
+            <div className="events-bg">
+              <Navbar />
+              <Problem_Statements />
             </div>
           }
         />
