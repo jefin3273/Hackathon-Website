@@ -5,7 +5,6 @@ import './DomainShowcase.css';
 const domains = [
   { name: 'Web', icon: '🌐' },
   { name: 'App', icon: '📱' },
-  { name: 'Blockchain', icon: '🔗' },
   { name: 'AI/ML', icon: '🧠' },
 ];
 

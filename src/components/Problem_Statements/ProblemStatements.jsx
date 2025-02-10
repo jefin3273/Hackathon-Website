@@ -81,34 +81,6 @@ Features to Include:
    - Multilingual interface for a global audience.`
   },
   {
-    id: 3,
-    name: 'Blockchain Solution',
-    title: 'Implementing Blockchain for Secure Fleet Management',
-    content: `Leverage blockchain technology to enhance the transparency, security, and efficiency of fleet management. The solution should cater to the unique requirements of Admins, Vendors, and Subcontractors while ensuring robust record-keeping and traceability.
-
-Features to Include:
-1. Smart Contracts for Transactions:
-   - Automate agreements between Admins, Vendors, and Subcontractors for vehicle rentals, maintenance, and performance tracking.
-   - Use smart contracts to manage payouts, ensuring compliance with SLAs.
-
-2. Vehicle History Ledger:
-   - Maintain a blockchain-based record of vehicle registrations, maintenance schedules, fuel consumption, and performance metrics.
-   - Ensure tamper-proof documentation for insurance claims and audits.
-
-3. Secure Driver Information:
-   - Use decentralized storage for securely managing driver profiles, licenses, and training certifications.
-   - Cross-verify driver Aadhaar details using DigiLocker to ensure legitimacy and enhance trust.
-
-4. Vendor and Subcontractor Integration:
-   - Track vehicle availability and performance through decentralized ledgers.
-   - Simplify invoicing and payment processes with blockchain-enabled transparency.
-
-5. Additional Features:
-   - Real-time notifications for contract updates and vehicle status.
-   - Integration with IoT sensors for real-time monitoring of vehicle health.
-   - Secure document management for registrations, insurance, and licenses.`
-  },
-  {
     id: 4,
     name: 'AI/ML Solution',
     title: 'AI-Powered Fleet Optimization and Predictive Analytics',
@@ -164,7 +136,7 @@ const ProblemStatements = () => {
         className="max-w-4xl mx-auto mb-12 text-lg text-center"
       >
         <p>Welcome to Hack-a-ton 2024, where innovators, developers, and visionaries come together to solve real-world challenges in fleet management. The goal of this hackathon is to build comprehensive solutions that cater to the needs of modern businesses while ensuring operational efficiency, user-centric design, and sustainability.</p>
-        <p className="mt-4">Below are the four problem statements categorized by domains: Web, Mobile App, Blockchain, and AI/ML. Each problem statement provides a detailed description of the expectations and features required to deliver impactful solutions.</p>
+        <p className="mt-4">Below are the four problem statements categorized by domains: Web, Mobile App and AI/ML. Each problem statement provides a detailed description of the expectations and features required to deliver impactful solutions.</p>
       </motion.div>
       <div className="max-w-4xl mx-auto">
         {domains.map((domain, index) => (
