@@ -32,7 +32,7 @@ const Footer = () => {
           </p>
           <p className="developed-by">
             Developed & Maintained by{" "}
-            <span onClick={developedBy} className="developer-link">Triniteus</span>
+            <span onClick={developedBy} className="developer-link">Tridany</span>
           </p>
           <button
             onClick={() => setIsModalOpen(true)}
@@ -47,7 +47,7 @@ const Footer = () => {
           <h2>Privacy Policy</h2>
           <p><em>Effective Date: 01 January 2025</em></p>
 
-          <p>Welcome to Triniteus Hackathon! We value your privacy and are committed to protecting your personal data. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website (https://triniteushackathon.vercel.app/). By using our site, you agree to the collection and use of your information in accordance with this policy.</p>
+          <p>Welcome to Tridany! We value your privacy and are committed to protecting your personal data. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website (https://triniteushackathon.vercel.app/). By using our site, you agree to the collection and use of your information in accordance with this policy.</p>
 
           <h3>1. Information We Collect</h3>
           <p>We may collect the following categories of information when you interact with our website:</p>
@@ -143,7 +143,7 @@ const Footer = () => {
           <p>If you have any questions, concerns, or requests regarding this Privacy Policy, please reach out to us at:</p>
           <p><em>Email:</em> privacypolicy@triniteus.com</p>
 
-          <p>Thank you for trusting Triniteus Hackathon with your personal data.</p>
+          <p>Thank you for trusting Tridany with your personal data.</p>
         </div>
       </Modal>
     </React.Fragment>
